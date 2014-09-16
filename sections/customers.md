@@ -14,6 +14,7 @@ Get customers
 |description | String|
 |active | Boolean|
 
+##Sample JSON Response
 ```json
 [
     {
