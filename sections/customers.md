@@ -31,6 +31,7 @@
     }, ...
 ]
 ```
+
 ##Get customer
 
 * `GET /customers/{id}` Returns a specific customer.
@@ -55,6 +56,7 @@
     "projects":{...}
 }
 ```
+
 ##Create customer
 
 * `POST /customers` Creates a new customer.
@@ -66,12 +68,14 @@
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/customers
+
 ```json
 {
     "name":"New Customer",
     "description":"Created via API"
 }
 ```
+
 ##Update customer
 
 * `PUT /customers/{id}` Updates a customer.
@@ -83,11 +87,13 @@ POST https://api.forecast.it/api/v1/customers
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/customers/1
+
 ```json
 {
     "description":"Updated Description"
 }
 ```
+
 ##Delete customer
 
 * `DELETE /customers/{id}` Deletes/Disables a customer.

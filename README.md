@@ -1,6 +1,6 @@
 #Forecast.it API
 
-API documentation and wrappers for the Forecast.it platform  http://forecast.it
+API documentation for the Forecast.it platform  http://forecast.it
 
 This is a [REST](http://en.wikipedia.org/wiki/Representational_state_transfer)-style [API](http://en.wikipedia.org/wiki/Application_programming_interface) that uses [JSON](http://json.org/) for serialization and [HTTP](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) [Basic authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
@@ -11,11 +11,17 @@ All URLs start with https://api.forecast.it/api/v1/. **SSL only**. The path is p
 
 To make a request for all the projects on your account, you'd append the projects index path to the base url e.g. https://api.forecast.it/api/v1/projects
 
+Using [curl](http://curl.haxx.se/) it will look like this:
+
+```shell
+curl -u {API-key}: https://api.forecast.it/api/v1/projects
+```
+
 That's it. Super simple, eh?
 
 ##Authentication
 
-If you're making a private integration with Forecast.it for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in Forecast.it use SSL.
+If you're making a private integration with Forecast.it for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in Forecast.it use [SSL](http://en.wikipedia.org/wiki/Transport_Layer_Security).
 
 API keys are generated in the administration module and used as username in Basic authentication.
 
@@ -30,7 +36,7 @@ If you're worried that an API key has been compromised, or you're simply no long
 ###API key security
 
 API keys grant full access to your Forecast.it account, and should be protected the same way you would protect your password. In particular, there are a few common scenarios to keep in mind when working with API keys:
-* Give each integration its own API key (at least use a few). If a specific API key is compromised, you can disable that key without disabling access to all of your other integrations.
+* Give each integration its own API key (or at least use a few). If a specific API key is compromised, you can disable that key without disabling access to all of your other integrations.
 * Be careful not to expose the key to the public (such as in screenshots, videos, help documentation, etc). Remember that blurring your data isn't always enough. It's best to use "cut" functions in your graphics program to remove the data completely.
 * If a key needs to be shared, generate a new key so it can be disabled, if needed. Make sure never to email the API key; if your email account becomes compromised, the emailed key would allow hackers access to your Forecast.it account as well.
 
