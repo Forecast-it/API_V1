@@ -60,7 +60,7 @@
 ```
 ##Get project
 
-* `GET /projects/{id}` Returns more information on one project.
+* `GET /projects/{projectId}` Returns more information on one project.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -196,7 +196,7 @@ POST https://api.forecast.it/api/v1/customers
 
 ##Update project
 
-* `PUT /projects/{id}` Updates a project.
+* `PUT /projects/{projectId}` Updates a project.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -232,7 +232,7 @@ PUT https://api.forecast.it/api/v1/customers/1
 
 ##Delete project
 
-* `DETELE /projects/{id}` Deletes a project.
+* `DETELE /projects/{projectId}` Deletes a project.
 
 ###Sample JSON Request
 DELETE https://api.forecast.it/api/v1/projects/1

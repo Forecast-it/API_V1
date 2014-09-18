@@ -28,7 +28,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/userstories/1",
+      "url":"http://api.forecast.it/api/v1/project/1/userStories/1",
       "id":1,
       "title":"The title of the user story",
       "description":null,
@@ -83,12 +83,12 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/1/userstories/1",
+   "url":"http://api.forecast.it/api/v1/project/1/userStories/1",
    "id":17
    "title":"The title of the user story",
    "description":null,
    "type":{
-      "url":"http://api.forecast.it/api/v1/userstorytypes/1",
+      "url":"http://api.forecast.it/api/v1/userStoryTypes/1",
       "id":1,
       "name":"Development",
       "description":"This is a development user story"
@@ -174,7 +174,7 @@
 |tags | (Optional) List<Integer> list of ids of tags|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/project/1/userstories
+POST https://api.forecast.it/api/v1/project/1/userStories
 
 ```json
 {
@@ -208,7 +208,7 @@ POST https://api.forecast.it/api/v1/project/1/userstories
 |tags | List<Integer> list of ids of tags|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/project/1/userstories/1
+PUT https://api.forecast.it/api/v1/project/1/userStories/1
 
 ```json
 {
@@ -222,5 +222,4 @@ PUT https://api.forecast.it/api/v1/project/1/userstories/1
 * `DELETE /project/{projectId}/userStories/{id}` Deletes a user story.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/projects/1/userstories/1
-
+DELETE https://api.forecast.it/api/v1/projects/1/userStories/1
