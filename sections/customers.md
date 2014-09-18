@@ -34,7 +34,7 @@
 
 ##Get customer
 
-* `GET /customers/{id}` Returns a specific customer.
+* `GET /customers/{customerId}` Returns a specific customer.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -78,7 +78,7 @@ POST https://api.forecast.it/api/v1/customers
 
 ##Update customer
 
-* `PUT /customers/{id}` Updates a customer.
+* `PUT /customers/{customerId}` Updates a customer.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -96,7 +96,7 @@ PUT https://api.forecast.it/api/v1/customers/1
 
 ##Delete customer
 
-* `DELETE /customers/{id}` Deletes/Disables a customer.
+* `DELETE /customers/{customerId}` Deletes/Disables a customer.
 
 ###Sample JSON Request
 DELETE https://api.forecast.it/api/v1/customers/1
