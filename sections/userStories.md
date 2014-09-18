@@ -2,7 +2,7 @@
 
 ##Get User Stories
 
-* `GET /projects/{id}/userstories` Returns all userstories for a project.
+* `GET /projects/{id}/userStories` Returns all userstories for a project.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -59,7 +59,7 @@
 
 ##Get User Story
 
-* `GET /project/{id}/userstories/{userstoryid}` Returns a user story for a project.
+* `GET /project/{id}/userStories/{userStoryId}` Returns a user story for a project.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -155,7 +155,7 @@
 
 ##Create User Story
 
-* `POST /project/{projectId}/userstories` Creates a user story.
+* `POST /project/{projectId}/userStories` Creates a user story.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -189,7 +189,7 @@ POST https://api.forecast.it/api/v1/project/1/userstories
 
 ##Update User Story
 
-* `PUT /project/{projectId}/userstories/{id}` Updates a user story.
+* `PUT /project/{projectId}/userStories/{id}` Updates a user story.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -219,7 +219,7 @@ PUT https://api.forecast.it/api/v1/project/1/userstories/1
 
 ##Delete User Story
 
-* `DELETE /project/{projectId}/userstories/{id}` Deletes a user story.
+* `DELETE /project/{projectId}/userStories/{id}` Deletes a user story.
 
 ###Sample JSON Request
 DELETE https://api.forecast.it/api/v1/projects/1/userstories/1

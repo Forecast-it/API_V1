@@ -126,9 +126,7 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/sprints
 PUT https://api.forecast.it/api/v1/projects/{projectId}/sprints/{id}
 
 ```json
-{
-    "description":"Updated Description"
-}
+TODO!!!
 ```
 
 ##Delete Sprint

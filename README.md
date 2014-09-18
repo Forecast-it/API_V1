@@ -69,8 +69,6 @@ Attempting a DELETE may result in a 403 Forbidden if the resource can not be del
 * [Tasks](https://github.com/Forecast-it/API/blob/master/sections/tasks.md)
 * [Sprints](https://github.com/Forecast-it/API/blob/master/sections/sprints.md)
 * [Project Types](https://github.com/Forecast-it/API/blob/master/sections/projectTypes.md)
-* [Tasks](https://github.com/Forecast-it/API/blob/master/sections/tasks.md)
-* [Project Types](https://github.com/Forecast-it/API/blob/master/sections/ProjectTypes.md)
 * [Time Tracking/Registrations](https://github.com/Forecast-it/API/blob/master/sections/timeRegistrations.md)
 * [Users](https://github.com/Forecast-it/API/blob/master/sections/users.md)
 * [Project Resources](https://github.com/Forecast-it/API/blob/master/sections/projectResources.md)
