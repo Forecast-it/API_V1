@@ -6,7 +6,7 @@
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|url | URL|
+|url | String, URL|
 |id | Integer|
 |name | String|
 |description | String|
@@ -29,7 +29,7 @@
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|url | URL|
+|url | String, URL|
 |id | Integer|
 |name | String|
 |description | String|
