@@ -1,6 +1,6 @@
 #Customers
 
-##Get customers
+##Get Customers
 
 * `GET /customers` Returns all customers.
 
@@ -32,7 +32,7 @@
 ]
 ```
 
-##Get customer
+##Get Customer
 
 * `GET /customers/{customerId}` Returns a specific customer.
 
@@ -57,7 +57,7 @@
 }
 ```
 
-##Create customer
+##Create Customer
 
 * `POST /customers` Creates a new customer.
 
@@ -76,7 +76,7 @@ POST https://api.forecast.it/api/v1/customers
 }
 ```
 
-##Update customer
+##Update Customer
 
 * `PUT /customers/{customerId}` Updates a customer.
 
@@ -94,7 +94,7 @@ PUT https://api.forecast.it/api/v1/customers/1
 }
 ```
 
-##Delete customer
+##Delete Customer
 
 * `DELETE /customers/{customerId}` Deletes/Disables a customer.
 
