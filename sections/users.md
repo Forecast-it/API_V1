@@ -43,7 +43,7 @@
 
 ##Get User
 
-* `GET /users/{id}` Returns a specific user.
+* `GET /users/{userId}` Returns a specific user.
 
 |Response Fields | Description/Format|
 |------------ | -------------|

@@ -43,7 +43,7 @@
 
 ##Get Project Type
 
-* `GET /projectTypes/{id}` Returns all project types.
+* `GET /projectTypes/{projectTypeId}` Returns all project types.
 
 |Response Fields | Description/Format|
 |------------ | -------------|

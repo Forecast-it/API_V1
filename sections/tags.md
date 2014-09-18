@@ -103,7 +103,7 @@ POST https://api.forecast.it/api/v1/tags
 
 ##Update Tag
 
-* `PUT /tags/{tagsId}` Updates a tag.
+* `PUT /tags/{tagId}` Updates a tag.
 
 |Response Fields | Description/Format|
 |------------ | -------------|

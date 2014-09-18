@@ -47,7 +47,7 @@
 
 ##Get Sprint
 
-* `GET /projects/{projectId}/sprints/{id}` Returns one sprint.
+* `GET /projects/{projectId}/sprints/{sprintId}` Returns one sprint.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -111,7 +111,7 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
 
 ##Update Sprint
 
-* `PUT /projects/{projectId}/sprints/{id}` Updates a sprint.
+* `PUT /projects/{projectId}/sprints/{sprintId}` Updates a sprint.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -131,7 +131,7 @@ TODO!!!
 
 ##Delete Sprint
 
-* `DELETE /projects/{projectId}/sprints/{id}` Delete a sprint.
+* `DELETE /projects/{projectId}/sprints/{sprintId}` Delete a sprint.
 
 ###Sample JSON Request
 DELETE https://api.forecast.it/api/v1/projects/1/sprints/1
