@@ -93,7 +93,7 @@
 |tags | (Optional) List<Integer>, List of Tag ids|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/projects/{projectId}/sprints
+POST https://api.forecast.it/api/v1/projects/1/sprints
 
 ```json
 {
@@ -123,7 +123,7 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/sprints
 |tags | List<Integer>, List of Tag ids|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/projects/{projectId}/sprints/{id}
+PUT https://api.forecast.it/api/v1/projects/1/sprints/1
 
 ```json
 TODO!!!
@@ -134,4 +134,4 @@ TODO!!!
 * `DELETE /projects/{projectId}/sprints/{id}` Delete a sprint.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/projects/{projectId}/sprints/{id}
+DELETE https://api.forecast.it/api/v1/projects/1/sprints/1

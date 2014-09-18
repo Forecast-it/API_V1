@@ -128,7 +128,7 @@ POST https://api.forecast.it/api/v1/users
 |startPage | String {“Dashboard”, ”SelectProject”,”ProjectPortfolio”}|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/users/{userId}
+PUT https://api.forecast.it/api/v1/users/1
 
 ```json
 TODO!!!
@@ -139,4 +139,4 @@ TODO!!!
 * `DELETE /users/{userId}` Deletes a user.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/users/{userId}
+DELETE https://api.forecast.it/api/v1/users/1

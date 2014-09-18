@@ -87,7 +87,7 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/projectResources
 |team | Integer, Id of the team|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/projects/{projectId}/projectResources/{resourceId}
+PUT https://api.forecast.it/api/v1/projects/1/projectResources/1
 
 ```json
 TODO!!!
@@ -98,4 +98,4 @@ TODO!!!
 * `DELETE /projects/{projectId}/projectResources/{resourceId}` Deletes a resource for a project.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/projects/{projectId}/projectResources/{resourceId}
+DELETE https://api.forecast.it/api/v1/projects/1/projectResources/1

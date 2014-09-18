@@ -77,7 +77,7 @@ POST https://api.forecast.it/api/v1/teams
 |description | String|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/teams/{teamId}
+PUT https://api.forecast.it/api/v1/teams/1
 
 ```json
 TODO!!!
@@ -88,4 +88,4 @@ TODO!!!
 * `DELETE /teams/{teamId}` Deletes a team.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/teams/{teamId}
+DELETE https://api.forecast.it/api/v1/teams/1

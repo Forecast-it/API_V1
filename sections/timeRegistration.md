@@ -89,7 +89,7 @@
 |team | (Optional) Integer, id of the team|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/projects/{projectId}/time
+POST https://api.forecast.it/api/v1/projects/1/time
 
 ```json
 {
@@ -122,7 +122,7 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/time
 |team | Integer, id of the team|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/projects/{projectId}/time/{timeId}
+PUT https://api.forecast.it/api/v1/projects/1/time/1
 
 ```json
 TODO!!!
@@ -133,4 +133,4 @@ TODO!!!
 * `DELETE /projects/{projectId}/time/{timeId}` Delete a time registration.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/projects/{projectId}/time/{timeId}
+DELETE https://api.forecast.it/api/v1/projects/1/time/1

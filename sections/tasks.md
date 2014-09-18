@@ -120,7 +120,7 @@
 |tags | (Optional) List<Integer>|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/projects/{projectId}/tasks
+POST https://api.forecast.it/api/v1/projects/1/tasks
 
 ```json
 {
@@ -158,7 +158,7 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/tasks
 |tags | List<Integer>|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/projects/{projectId}/tasks/{id}
+PUT https://api.forecast.it/api/v1/projects/1/tasks/1
 
 ```json
 TODO!!!
