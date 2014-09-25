@@ -9,94 +9,81 @@
 |url | URL to the customer|
 |id | Integer|
 |name | String|
-|description | String|
-|active | Boolean|
 
 ###Sample JSON Response
 ```json
 [
     {
-        "url": "https://api.forecast.it/api/v1/customers/1",
+        "url": "https://api.forecast.it/api/v1/businessUnits/1",
         "id": 1,
-        "name": "Customer 1",
-        "description": "An active customer",
-        "active": true
+        "name": "Business Unit 1"
     },
     {
-        "url": "https://api.forecast.it/api/v1/customers/2",
+        "url": "https://api.forecast.it/api/v1/businessUnits/2",
         "id": 2,
-        "name": "Customer 2",
-        "description": "A disabled customer",
-        "active": false
+        "name": "Business Unit 2"
     }, ...
 ]
 ```
 
-##Get Customer
+##Get Business Unit
 
-* `GET /customers/{customerId}` Returns a specific customer.
+* `GET /businessUnits/{businessUnitId}` Returns a specific business unit.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
 |url | URL to the customer|
 |id | Integer|
 |name | String|
-|description | String|
-|active | Boolean|
-|projects | A List of the projects from this Customer (See GET project for JSON)|
+|projectTypes | A List of the project types usable with this business unit. (See GET projectType for JSON)|
 
 ###Sample JSON Response
 ```json
 {
-    "url":"http://api.forecast.it/api/v1/customers/1",
+    "url":"http://api.forecast.it/api/v1/businessUnits/1",
     "id":1,
-    "name":"Customer 1",
-    "description":"Description of customer",
-    "active":true,
-    "projects":{...}
+    "name":"Business Unit 1",
+    "projectTypes":{...}
 }
 ```
 
-##Create Customer
+##Create Business Unit
 
-* `POST /customers` Creates a new customer.
+* `POST /businessUnits` Creates a new customer.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
 |name | String (Required)|
-|description | String (Optional)|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/customers
+POST https://api.forecast.it/api/v1/businessUnits
 
 ```json
 {
-    "name":"New Customer",
-    "description":"Created via API"
+    "name":"New Business Unit"
 }
 ```
 
-##Update Customer
+##Update Business Unit
 
-* `PUT /customers/{customerId}` Updates a customer.
+* `PUT /businessUnits/{businessUnitId}` Updates a business unit.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
 |name | String|
-|description | String|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/customers/1
+PUT https://api.forecast.it/api/v1/businessUnits/1
 
 ```json
 {
-    "description":"Updated Description"
+    "name":"New Name"
 }
 ```
 
-##Delete Customer
+##Delete Business Unit
 
-* `DELETE /customers/{customerId}` Deletes/Disables a customer.
+* `DELETE /businessUnits/{businessUnitId}` Deletes a business unit.
 
 ###Sample JSON Request
-DELETE https://api.forecast.it/api/v1/customers/1
+DELETE https://api.forecast.it/api/v1/businessUnits/1
