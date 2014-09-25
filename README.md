@@ -58,7 +58,7 @@ Successful DELETE requests return 200 OK
 
 If Forecast.it is having trouble, you might see a 5xx error. 500 means that the app is entirely down, but you might also see 502 Bad Gateway, 503 Service Unavailable, or 504 Gateway Timeout. It's your responsibility in all of these cases to retry your request later.
 
-Attempting a DELETE may result in a 403 Forbidden if the resource can not be deleted due to dependencies. Successful deletions return a 200 OK response. **Note that some resources will only be deactivated by a DELETE request and will therefore still appear on GET requests, but with â€œactiveâ€� : false.**
+Attempting a DELETE may result in a 403 Forbidden if the resource can not be deleted due to dependencies. Successful deletions return a 200 OK response. **Note that some resources will only be deactivated by a DELETE request and will therefore still appear on GET requests, but with "active" : false.**
 
 404 Errors usually means that you are trying to PUT/DELETE a resource that doesn't exist or doesn't belong to your company. 
 
