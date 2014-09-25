@@ -6,7 +6,7 @@
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|url | URL to the customer|
+|url | URL to the business unit|
 |id | Integer|
 |name | String|
 
@@ -32,7 +32,7 @@
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|url | URL to the customer|
+|url | URL to the business unit|
 |id | Integer|
 |name | String|
 |projectTypes | A List of the project types usable with this business unit. (See GET projectType for JSON)|
@@ -49,7 +49,7 @@
 
 ##Create Business Unit
 
-* `POST /businessUnits` Creates a new customer.
+* `POST /businessUnits` Creates a new business unit.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
