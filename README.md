@@ -62,21 +62,26 @@ Attempting a DELETE may result in a 403 Forbidden if the resource can not be del
 
 404 Errors usually means that you are trying to PUT/DELETE a resource that doesn’t exist or doesn’t belong to your company. 
 
-##API ready for use
+##API sections
 
-* [Projects](https://github.com/Forecast-it/API/blob/master/sections/projects.md)
-* [User Stories](https://github.com/Forecast-it/API/blob/master/sections/userStories.md)
-* [Tasks](https://github.com/Forecast-it/API/blob/master/sections/tasks.md)
-* [Sprints](https://github.com/Forecast-it/API/blob/master/sections/sprints.md)
-* [Project Types](https://github.com/Forecast-it/API/blob/master/sections/projectTypes.md)
-* [Time Tracking/Registration](https://github.com/Forecast-it/API/blob/master/sections/timeRegistration.md)
 * [Users](https://github.com/Forecast-it/API/blob/master/sections/users.md)
-* [Project People/Resources](https://github.com/Forecast-it/API/blob/master/sections/projectResources.md)
+* [Roles](https://github.com/Forecast-it/API/blob/master/sections/roles.md)
 * [Teams](https://github.com/Forecast-it/API/blob/master/sections/teams.md)
 * [Customers](https://github.com/Forecast-it/API/blob/master/sections/customers.md)
-* [Roles](https://github.com/Forecast-it/API/blob/master/sections/roles.md)
+* [Business Units](https://github.com/Forecast-it/API/blob/master/sections/businessUnits.md)
+* [Projects](https://github.com/Forecast-it/API/blob/master/sections/projects.md)
+* [Project Phases](https://github.com/Forecast-it/API/blob/master/sections/projectPhases.md)
+* [Project Types](https://github.com/Forecast-it/API/blob/master/sections/projectTypes.md)
+* [Project People/Resources](https://github.com/Forecast-it/API/blob/master/sections/projectResources.md)
+* [User Stories](https://github.com/Forecast-it/API/blob/master/sections/userStories.md)
 * [User Story Types](https://github.com/Forecast-it/API/blob/master/sections/userStoryTypes.md)
+* [Sprints](https://github.com/Forecast-it/API/blob/master/sections/sprints.md)
+* [Tasks](https://github.com/Forecast-it/API/blob/master/sections/tasks.md)
+* [Time Tracking/Registration](https://github.com/Forecast-it/API/blob/master/sections/timeRegistration.md)
 * [Tags](https://github.com/Forecast-it/API/blob/master/sections/tags.md)
+* [Files/Attachments](https://github.com/Forecast-it/API/blob/master/sections/filesAttachments.md)
+* [Milestones](https://github.com/Forecast-it/API/blob/master/sections/milestones.md)
+* [Versions](https://github.com/Forecast-it/API/blob/master/sections/versions.md)
 
 ##API libraries
 
@@ -88,6 +93,6 @@ Attempting a DELETE may result in a 403 Forbidden if the resource can not be del
 
 Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use GitHub issues. Fork these docs and send a pull request with improvements.
 
-To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `forecast-it` or open a support ticket through the Forecast.it feedback system.
+To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `forecast_it` or open a support ticket through the Forecast.it feedback system.
 
 You can always reach us via email at info@forecast.it
