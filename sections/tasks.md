@@ -128,7 +128,7 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
    "description":"Task Description",
    "estimate":8,
    "timeLeft":8,
-   "status":"To Do",
+   "status":4,
    "owner": 42,
    "userStory": 5435,
    "deadline":null,
@@ -161,7 +161,10 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 PUT https://api.forecast.it/api/v1/projects/1/tasks/1
 
 ```json
-TODO!!!
+{
+   "timeLeft":0,
+   "status":5
+}
 ```
 
 ##Delete Task

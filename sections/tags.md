@@ -123,7 +123,10 @@ POST https://api.forecast.it/api/v1/tags
 PUT https://api.forecast.it/api/v1/tags/1
 
 ```json
-TODO!!!
+{
+   "name":"Different Name",
+   "project":false
+}
 ```
 
 ##Delete Tag

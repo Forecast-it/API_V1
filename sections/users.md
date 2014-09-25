@@ -18,7 +18,7 @@
 |isAdmin | Boolean|
 |active | Boolean|
 |externalEmployeeId | String|
-|startPage | String {“Dashboard”, ”SelectProject”,”ProjectPortfolio”}|
+|startPage | String {â€œDashboardâ€�, â€�SelectProjectâ€�,â€�ProjectPortfolioâ€�}|
 
 ###Sample JSON Response
 ```json
@@ -59,7 +59,7 @@
 |isAdmin | Boolean|
 |active | Boolean|
 |externalEmployeeId | String|
-|startPage | String {“Dashboard”, ”SelectProject”,”ProjectPortfolio”}|
+|startPage | String {â€œDashboardâ€�, â€�SelectProjectâ€�,â€�ProjectPortfolioâ€�}|
 
 ###Sample JSON Response
 ```json
@@ -93,7 +93,7 @@
 |isAdmin | (Required) Boolean|
 |active | (Optional) Boolean|
 |externalEmployeeId | (Optional) String|
-|startPage | (Required) String {“Dashboard”, ”SelectProject”,”ProjectPortfolio”}|
+|startPage | (Required) String {â€œDashboardâ€�, â€�SelectProjectâ€�,â€�ProjectPortfolioâ€�}|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/users
@@ -125,13 +125,16 @@ POST https://api.forecast.it/api/v1/users
 |isAdmin | Boolean|
 |active | Boolean|
 |externalEmployeeId | String|
-|startPage | String {“Dashboard”, ”SelectProject”,”ProjectPortfolio”}|
+|startPage | String {â€œDashboardâ€�, â€�SelectProjectâ€�,â€�ProjectPortfolioâ€�}|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/users/1
 
 ```json
-TODO!!!
+{
+   "firstName":"John",
+   "lastName":"Doe"
+}
 ```
 
 ##Delete User

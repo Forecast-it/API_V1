@@ -80,7 +80,10 @@ POST https://api.forecast.it/api/v1/userStoryTypes
 PUT https://api.forecast.it/api/v1/userStoryTypes/1
 
 ```json
-TODO!!!
+{
+   "name":"New type name",
+   "description":"Different description"
+}
 ```
 
 ##Delete User Story Type

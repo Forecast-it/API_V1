@@ -125,7 +125,10 @@ POST https://api.forecast.it/api/v1/projects/1/time
 PUT https://api.forecast.it/api/v1/projects/1/time/1
 
 ```json
-TODO!!!
+{
+   "description":"updated description",
+   "minutes":120
+}
 ```
 
 ##Delete Time Registration

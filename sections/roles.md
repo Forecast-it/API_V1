@@ -91,7 +91,10 @@ POST https://api.forecast.it/api/v1/roles
 PUT https://api.forecast.it/api/v1/roles/1
 
 ```json
-TODO!!!
+{
+   "name":"New Name",
+   "internalCostPrice":42.00
+}
 ```
 
 ##Delete Role

@@ -90,7 +90,10 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/projectResources
 PUT https://api.forecast.it/api/v1/projects/1/projectResources/1
 
 ```json
-TODO!!!
+{
+   "role":41,
+   "costType":64
+}
 ```
 
 ##Delete Project Access

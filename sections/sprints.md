@@ -12,7 +12,7 @@
 |description | String|
 |startDate | Date|
 |endDate | Date|
-|status | String {“Active”, “Closed”}|
+|status | String {â€œActiveâ€�, â€œClosedâ€�}|
 |tags | List<String>, List of Tag Names|
 
 ###Sample JSON Response
@@ -39,7 +39,7 @@
       "endDate":"2013-01-23T00:00:00+01:00",
       "status":"Closed",
       "tags":[
-         “Web”, ...
+         â€œWebâ€�, ...
       ]
    }, ...
 ]
@@ -57,7 +57,7 @@
 |description | String|
 |startDate | Date|
 |endDate | Date|
-|status | String {“Active”, “Closed”}|
+|status | String {â€œActiveâ€�, â€œClosedâ€�}|
 |tags | List<JSON (Tag)>|
 |userstories | List<JSON (User Story)>|
 
@@ -89,7 +89,7 @@
 |description | (Optional) String|
 |startDate | (Required) Date|
 |endDate | (Required) Date|
-|status | (Required) String {“Active”, “Closed”}|
+|status | (Required) String {â€œActiveâ€�, â€œClosedâ€�}|
 |tags | (Optional) List<Integer>, List of Tag ids|
 
 ###Sample JSON Request
@@ -119,14 +119,21 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
 |description | String|
 |startDate | Date|
 |endDate | Date|
-|status | String {“Active”, “Closed”}|
+|status | String {â€œActiveâ€�, â€œClosedâ€�}|
 |tags | List<Integer>, List of Tag ids|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/sprints/1
 
 ```json
-TODO!!!
+{
+   "status":"Closed",
+   "tags":[
+      432,
+      437,
+      436
+   ]
+}
 ```
 
 ##Delete Sprint

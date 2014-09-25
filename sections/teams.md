@@ -80,7 +80,10 @@ POST https://api.forecast.it/api/v1/teams
 PUT https://api.forecast.it/api/v1/teams/1
 
 ```json
-TODO!!!
+{
+   "name":"Different Team Name",
+   "description":"New description"
+}
 ```
 
 ##Delete Team
