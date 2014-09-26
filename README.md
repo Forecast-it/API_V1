@@ -1,9 +1,18 @@
-#Forecast.it API
+#What is the Forecast.it API?
 
-API documentation for the Forecast.it platform  http://forecast.it
+The [Forecast.it](http://forecast.it) API is a complete programmable interface to all Forecast.it functionality.
 
 This is a [REST](http://en.wikipedia.org/wiki/Representational_state_transfer)-style [API](http://en.wikipedia.org/wiki/Application_programming_interface) that uses [JSON](http://json.org/) for serialization and [HTTP](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) [Basic authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
+#What can you do with it?
+
+A ton of stuff! We've exposed all the needed services for you to use in your applications. 
+
+#How do I get started?
+
+You'll need a Forecast.it account, first of all. Then you grab an API key for each app you want to build from the Forecast.it "Administration" page.
+
+We recommend that you start out by getting to know the concepts and conventions of Forecast.it (and the API) and learn how to authenticate with us.
 
 ##Making a request
 
