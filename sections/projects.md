@@ -226,7 +226,7 @@ PUT https://api.forecast.it/api/v1/customers/1
 {
     "comment":"Updated Comment",
     "hasParentProject":true,
-    "parentProject":2,
+    "parentProject":2
 }
 ```
 
