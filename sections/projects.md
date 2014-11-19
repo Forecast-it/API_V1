@@ -40,17 +40,17 @@
       "projectType":"Scrum Project Type Example",
       "businessUnit":"Main Business Unit",
       "customer":"An example customer",
-      "projectOwner":”John Smith (JS)”,
-      "projectManager":”Jane Doe (JD)”,
-      "projectEstimator":”Foo Bar (FB)”,
+      "projectOwner":"John Smith (JS)",
+      "projectManager":"Jane Doe (JD)",
+      "projectEstimator":"Foo Bar (FB)",
       "hasParentProject":false,
       "parentProject":null,
       "startDate":"2012-11-19T01:00:00",
-      "deliveryDate":2013-11-19T01:00:00,
+      "deliveryDate":"2013-11-19T01:00:00",
       "useCost":"Internal",
       "tags":[  
-         “Web”,
-         “Marketing”
+         "Web",
+         "Marketing"
       ],
       "excludeFromStatistics":false,
       "useALA":true
@@ -104,7 +104,6 @@
 	 "url":"http://api.forecast.it/api/v1/businessunits/68",
 	 "id":68,
 	 "name":"Main Business Unit"
-	 ]
   },
   "customer":{  
 	 "url":"http://api.forecast.it/api/v1/customers/7",
@@ -132,7 +131,7 @@
   "hasParentProject":false,
   "parentProject":null,
   "startDate":"2012-11-19T01:00:00",
-  "deliveryDate":2013-11-19T01:00:00,
+  "deliveryDate":"2013-11-19T01:00:00",
   "comment":"This is an example project",
   "useCost":"Internal",
   "tags":[  
