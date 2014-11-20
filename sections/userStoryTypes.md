@@ -23,7 +23,7 @@
 ]
 ```
 
-##GGet User Story Type
+##Get User Story Type
 
 * `GET /userstorytypes/{userStoryTypeid}` Returns a specific user story type.
 
