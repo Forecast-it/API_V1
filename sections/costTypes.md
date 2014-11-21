@@ -12,7 +12,6 @@
 |description | String|
 |internalCost | Decimal, The internal cost|
 |externalCost | Decimal, The external cost|
-|project | JSON (Project), The project|
 |initialInternalCost | Decimal|
 |initialExternalCost | Decimal|
 
@@ -20,22 +19,24 @@
 ```json
 [
     {
-	    "url": "https://api.forecast.it/api/v1/projectPhases/10",
-	    "id": 10,
-	    "phase": "Design",
-	    "description": "The design phase.",
-	    "weight": 25,
-	    "calculatedWeight": 25,
-	    "order": 1
+        "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
+        "id": 76,
+        "name": "Blended Rate",
+        "description": "This is the default blended rate for all project groups.",
+        "internalCost": 110.00,
+        "externalCost": 800.00,
+        "initialInternalCost": 1242,
+        "initialExternalCost": 1206
     },
-	{
-	    "url": "https://api.forecast.it/api/v1/projectPhases/11",
-	    "id": 11,
-	    "phase": "Implementation",
-	    "description": "The implementation phase.",
-	    "weight": 25,
-	    "calculatedWeight": 25,
-	    "order": 2
+    {
+        "url": "https://api.forecast.it/api/v1/project/17/costTypes/77",
+        "id": 77,
+        "name": "Developer",
+        "description": "Example of a developer role.",
+        "internalCost": 110.00,
+        "externalCost": 800.00,
+        "initialInternalCost": 110,
+        "initialExternalCost": 0
     }, ...
 ]
 ```
@@ -52,19 +53,19 @@ Response Fields | Description/Format|
 |description | String|
 |internalCost | Decimal, The internal cost|
 |externalCost | Decimal, The external cost|
-|project | JSON (Project), The project|
 |initialInternalCost | Decimal|
 |initialExternalCost | Decimal|
 
 ###Sample JSON Response
 ```json
 {
-	"url": "https://api.forecast.it/api/v1/projectPhases/10",
-	"id": 10,
-	"phase": "Design",
-	"description": "The design phase.",
-	"weight": 25,
-	"calculatedWeight": 25,
-	"order": 1
+    "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
+    "id": 76,
+    "name": "Blended Rate",
+    "description": "This is the default blended rate for all project groups.",
+    "internalCost": 110.00,
+    "externalCost": 800.00,
+    "initialInternalCost": 1242,
+    "initialExternalCost": 1206
 }
 ```

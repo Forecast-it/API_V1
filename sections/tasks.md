@@ -14,7 +14,7 @@
 |timeLeft | Integer|
 |projectPhase | String|
 |status | String|
-|owner | String|
+|owners | List<String>|
 |userStory | String|
 |deadline | Date|
 |closed | Boolean|
@@ -31,7 +31,9 @@
       "estimate":8,
       "timeLeft":8,
       "status":"To Do",
-      "owner":"John Smith (JS)",
+      "owner":[
+	      "John Smith (JS)"
+      ],
       "userStory":"User Story Title",
       "deadline":null,
       "tags":[
@@ -55,7 +57,7 @@
 |timeLeft | Integer|
 |projectPhase | String|
 |status | String|
-|owner | JSON (User)|
+|owners | List<JSON (User)>|
 |userStory | JSON (User Story)|
 |deadline | Date|
 |closed | Boolean|
@@ -72,7 +74,9 @@
    "estimate":8,
    "timeLeft":8,
    "status":"To Do",
-   "owner": (See JSON from GET User),
+   "owners":[
+      (See JSON from GET User)
+   ],
    "userStory": (See JSON from GET User Story) ,
    "deadline":null,
    "tags":[
@@ -113,7 +117,7 @@
 |timeLeft | (Optional) Integer|
 |projectPhase | (Required) Integer, id of the project phase|
 |status | (Optional) Integer, id of the scrum column|
-|owner | (Required) Integer, id of the user|
+|owners | (Required) List<Integer>, id of the users|
 |userStory | (Optional) Integer, id of the user story|
 |deadline | (Optional) Date|
 |closed | (Optional) Boolean|
@@ -129,7 +133,7 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
    "estimate":8,
    "timeLeft":8,
    "status":4,
-   "owner": 42,
+   "owner":[42],
    "userStory": 5435,
    "deadline":null,
    "tags":[
@@ -151,7 +155,7 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 |timeLeft | Integer|
 |projectPhase | Integer, id of the project phase|
 |status | Integer, id of the scrum column|
-|owner | Integer, id of the user|
+|owners | List<Integer>, id of the users|
 |userStory | Integer, id of the user story|
 |deadline | Date|
 |closed | Boolean|
