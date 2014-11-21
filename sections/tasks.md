@@ -55,7 +55,7 @@
 |description | String|
 |estimate | Integer|
 |timeLeft | Integer|
-|projectPhase | String|
+|projectPhase | JSON (Project Phase)|
 |status | String|
 |owners | List<JSON (User)>|
 |userStory | JSON (User Story)|
@@ -132,6 +132,7 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
    "description":"Task Description",
    "estimate":8,
    "timeLeft":8,
+   "projectPhase":1,
    "status":4,
    "owner":[42],
    "userStory": 5435,
