@@ -8,10 +8,10 @@
 |------------ | -------------|
 |url | String, Url to the project resource|
 |id | Integer|
-|user | String|
-|role | String|
-|costType | String|
-|team | String|
+|user | String, User initials|
+|role | String, Name of the role|
+|costType | String, Name of the cost type|
+|team | String, Name of the team|
 
 ###Sample JSON Response
 ```json
@@ -36,8 +36,8 @@
 |url | String, Url to the project resource|
 |id | Integer|
 |user | JSON (User)|
-|role | String|
-|costType | String|
+|role | JSON (Role)|
+|costType | JSON (Cost Type)|
 |team | JSON (Team)|
 
 ###Sample JSON Response
@@ -46,9 +46,9 @@
    "url":"http://api.forecast.it/api/v1/project/1/projectResources/1",
    "id":1,
    "user":(See JSON for GET User),
-   "role":"Master",
+   "role":(See JSON for GET Role),
    "team":(See JSON for GET Team),
-   "costType":"Developer"
+   "costType":/See JSON for GET Cost Type)
 }
 ```
 
