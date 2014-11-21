@@ -51,8 +51,8 @@
 |workerName | String|
 |task | JSON (Task)|
 |worker | JSON (User)|
-|projectPhase | String|
-|costType | String|
+|projectPhase | JSON (Project Phase)|
+|costType | JSON (Cost Type)|
 |team | JSON (Team)|
 
 ###Sample JSON Response
@@ -66,8 +66,8 @@
    "workerName":"Niels Frederiksen",
    "task":(See JSON for GET Task),
    "worker":(See JSON for GET User),
-   "projectPhase":"Implementation",
-   "costType":"Developer",
+   "projectPhase":(See JSON for GET Project Phase),
+   "costType":(See JSON for GET Cost Type),
    "team":(See JSON for GET Team)
 }
 ```
