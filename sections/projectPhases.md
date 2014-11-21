@@ -1,11 +1,66 @@
-#Project Phases - Upcoming API feature
+#Project Phases
 
-##Planned for a later roadmap release
+##Get Project Phases
 
-This part of the API is not done yet, but is a part of our roadmap. 
+* `GET /projects/{projectId}/projectPhases` Returns all phases for a project.
 
-If you have a specific need for this API feature and/or want to know when it's planned for development, please contact us.
+|Response Fields | Description/Format|
+|------------ | -------------|
+|url | String, Url to the project phase|
+|id | Integer|
+|phase | String, Name of the phase|
+|description | String|
+|weight | Integer, The weight in percent|
+|calculatedWeight | Integer, the calculated weight from Forecast.it|
+|order | Integer, The sorting order of the phase|
 
-To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `forecast_it` or open a support ticket through the Forecast.it feedback system.
+###Sample JSON Response
+```json
+[
+    {
+	    "url": "https://api.forecast.it/api/v1/projectPhases/10",
+	    "id": 10,
+	    "phase": "Design",
+	    "description": "The design phase.",
+	    "weight": 25,
+	    "calculatedWeight": 25,
+	    "order": 1
+    },
+	{
+	    "url": "https://api.forecast.it/api/v1/projectPhases/11",
+	    "id": 11,
+	    "phase": "Implementation",
+	    "description": "The implementation phase.",
+	    "weight": 25,
+	    "calculatedWeight": 25,
+	    "order": 2
+    }, ...
+]
+```
 
-You can always reach us via email at info@forecast.it
+##Get Project Phase
+
+* `GET /projects/{projectId}/projectPhases/{phaseId}` Returns one project phase.
+
+Response Fields | Description/Format|
+|------------ | -------------|
+|url | String, Url to the project phase|
+|id | Integer|
+|phase | String, Name of the phase|
+|description | String|
+|weight | Integer, The weight in percent|
+|calculatedWeight | Integer, the calculated weight from Forecast.it|
+|order | Integer, The sorting order of the phase|
+
+###Sample JSON Response
+```json
+{
+	"url": "https://api.forecast.it/api/v1/projectPhases/10",
+	"id": 10,
+	"phase": "Design",
+	"description": "The design phase.",
+	"weight": 25,
+	"calculatedWeight": 25,
+	"order": 1
+}
+```
