@@ -69,7 +69,21 @@ If Forecast.it is having trouble, you might see a 5xx error. 500 means that the 
 
 Attempting a DELETE may result in a 403 Forbidden if the resource can not be deleted due to dependencies. Successful deletions return a 200 OK response. **Note that some resources will only be deactivated by a DELETE request and will therefore still appear on GET requests, but with "active" : false.**
 
-404 Errors usually means that you are trying to PUT/DELETE a resource that doesn't exist or doesn't belong to your company. 
+404 Errors usually means that you are trying to PUT/DELETE a resource that doesn't exist.
+
+Errors are returned in the following JSON format.
+|Response Fields | Description/Format|
+|------------ | -------------|
+|status | Integer, the status code of the error. This corresponds to the HTTP status code|
+|message | String, a descriptive message explaining the error|
+
+###Sample JSON Error Response
+```json
+{
+    "status":401,
+	"message":"Server failed to authenticate the request."
+}
+```
 
 ##API sections
 
