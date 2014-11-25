@@ -72,6 +72,7 @@ Attempting a DELETE may result in a 403 Forbidden if the resource can not be del
 404 Errors usually means that you are trying to PUT/DELETE a resource that doesn't exist.
 
 Errors are returned in the following JSON format.
+
 |Response Fields | Description/Format|
 |------------ | -------------|
 |status | Integer, the status code of the error. This corresponds to the HTTP status code|
