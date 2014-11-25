@@ -15,7 +15,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/userStoryTypes/1",
+      "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
       "id":1,
       "name":"Development",
       "description":"This is a regular development user story"
@@ -38,7 +38,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/userStoryTypes/1",
+   "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
    "id":1,
    "name":"Development",
    "description":"This is a regular development user story",

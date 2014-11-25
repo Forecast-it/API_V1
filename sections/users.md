@@ -24,7 +24,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/users/1",
+      "url":"https://api.forecast.it/api/v1/users/1",
       "id":1,
       "firstName":"John",
       "lastName":"Smith",
@@ -64,7 +64,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/users/1",
+   "url":"https://api.forecast.it/api/v1/users/1",
    "id":1,
    "firstName":"John",
    "lastName":"Smith",

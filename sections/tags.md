@@ -15,7 +15,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/tags/1",
+      "url":"https://api.forecast.it/api/v1/tags/1",
       "id":1,
       "name":"Web",
       "active":true
@@ -47,7 +47,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/tags/1",
+   "url":"https://api.forecast.it/api/v1/tags/1",
    "id":1,
    "name":"Web",
    "project":true,

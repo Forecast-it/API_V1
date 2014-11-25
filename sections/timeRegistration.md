@@ -22,7 +22,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/time/1",
+      "url":"https://api.forecast.it/api/v1/project/1/time/1",
       "id":1,
       "description":"Fixed that annoying bug!",
       "date":"2013-01-16T00:00:00+01:00",
@@ -58,7 +58,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/11/time/1",
+   "url":"https://api.forecast.it/api/v1/project/11/time/1",
    "id":1,
    "description":"",
    "date":"2013-01-16T00:00:00+01:00",

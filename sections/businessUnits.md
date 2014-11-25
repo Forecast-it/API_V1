@@ -40,7 +40,7 @@
 ###Sample JSON Response
 ```json
 {
-    "url":"http://api.forecast.it/api/v1/businessUnits/1",
+    "url":"https://api.forecast.it/api/v1/businessUnits/1",
     "id":1,
     "name":"Business Unit 1",
     "projectTypes":{...}

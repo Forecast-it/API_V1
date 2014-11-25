@@ -19,7 +19,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/sprints/1",
+      "url":"https://api.forecast.it/api/v1/project/1/sprints/1",
       "id":1,
       "title":"Backlog",
       "description":"",
@@ -31,7 +31,7 @@
       ]
    },
    {
-      "url":"http://api.forecast.it/api/v1/project/1/sprints/2",
+      "url":"https://api.forecast.it/api/v1/project/1/sprints/2",
       "id":2,
       "title":"Sprint 1",
       "description":"",
@@ -64,7 +64,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/1/sprints/2",
+   "url":"https://api.forecast.it/api/v1/project/1/sprints/2",
    "id":2,
    "title":"Sprint 1",
    "description":"",

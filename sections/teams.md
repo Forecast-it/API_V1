@@ -15,7 +15,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/teams/1",
+      "url":"https://api.forecast.it/api/v1/teams/1",
       "id":1,
       "name":"Team Name",
       "description":"A description of the team"
@@ -38,7 +38,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/teams/1",
+   "url":"https://api.forecast.it/api/v1/teams/1",
    "id":1,
    "name":"Team Name",
    "description":"A description of the team",

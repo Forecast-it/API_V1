@@ -24,7 +24,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/tasks/1",
+      "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
       "id":1,
       "title":"Task Title",
       "description":"Task Description",
@@ -67,7 +67,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/1/tasks/1",
+   "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
    "id":1,
    "title":"Task Title",
    "description":"Task Description",
@@ -81,7 +81,7 @@
    "deadline":null,
    "tags":[
       {
-         "url":"http://api.forecast.it/api/v1/tags/32",
+         "url":"https://api.forecast.it/api/v1/tags/32",
          "id":32,
          "name":"Web",
          "active":true
@@ -89,7 +89,7 @@
    ],
    "registeredTime":[
       {  
-         "url":"http://api.forecast.it/api/v1/project/1/time/1",
+         "url":"https://api.forecast.it/api/v1/project/1/time/1",
          "id":1,
          "description":"Description of registered time",
          "date":"2013-11-08T00:00:00+01:00",

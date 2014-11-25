@@ -28,7 +28,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/userStories/1",
+      "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
       "id":1,
       "title":"The title of the user story",
       "description":null,
@@ -83,12 +83,12 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/1/userStories/1",
+   "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
    "id":17
    "title":"The title of the user story",
    "description":null,
    "type":{
-      "url":"http://api.forecast.it/api/v1/userStoryTypes/1",
+      "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
       "id":1,
       "name":"Development",
       "description":"This is a development user story"
@@ -100,7 +100,7 @@
    "estimate":16,
    "epic":"",
    "sprint":{
-      "url":"http://api.forecast.it/api/v1/project/1/sprints/1",
+      "url":"https://api.forecast.it/api/v1/project/1/sprints/1",
       "id":1,
       "title":"The name of the Sprint",
       "description":"Sprint description",
@@ -113,7 +113,7 @@
    },
    "owners":[
       {
-         "url":"http://api.forecast.it/api/v1/users/1",
+         "url":"https://api.forecast.it/api/v1/users/1",
          "id":1,
          "firstName":"John",
          "lastName":"Smith",
@@ -135,7 +135,7 @@
    ],
    "tasks":[
       {
-         "url":"http://api.forecast.it/api/v1/project/1/tasks/1",
+         "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
          "id":1,
          "title":"View data",
          "description":"",

@@ -48,7 +48,7 @@
 ###Sample JSON Response
 ```json
 {
-    "url":"http://api.forecast.it/api/v1/customers/1",
+    "url":"https://api.forecast.it/api/v1/customers/1",
     "id":1,
     "name":"Customer 1",
     "description":"Description of customer",

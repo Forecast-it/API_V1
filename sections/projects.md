@@ -31,7 +31,7 @@
 ```json
 [
     {  
-      "url":"http://api.forecast.it/api/v1/projects/1",
+      "url":"https://api.forecast.it/api/v1/projects/1",
       "id":1,
       "projectIdString":"x001",
       "name":"Example Project 1",
@@ -88,32 +88,32 @@
 ###Sample JSON Response
 ```json
 {  
-  "url":"http://api.forecast.it/api/v1/projects/1",
+  "url":"https://api.forecast.it/api/v1/projects/1",
   "id":1,
   "projectIdString":"x001",
   "name":"Example Project 1",
   "projectStatus":"In Progress",
   "projectType":{  
-	 "url":"http://api.forecast.it/api/v1/projecttypes/7",
+	 "url":"https://api.forecast.it/api/v1/projecttypes/7",
 	 "id":7,
 	 "name":"Scrum Project Type Example",
 	 "description":"This is a Scrum project type.",
 	 "developmentModel":"Scrum"
   },
   "businessUnit":{  
-	 "url":"http://api.forecast.it/api/v1/businessunits/68",
+	 "url":"https://api.forecast.it/api/v1/businessunits/68",
 	 "id":68,
 	 "name":"Main Business Unit"
   },
   "customer":{  
-	 "url":"http://api.forecast.it/api/v1/customers/7",
+	 "url":"https://api.forecast.it/api/v1/customers/7",
 	 "id":7,
 	 "name":"Customer X",
 	 "description":"An example customer",
 	 "active":true
   },
   "projectOwner":{
-      "url":"http://api.forecast.it/api/v1/users/1",
+      "url":"https://api.forecast.it/api/v1/users/1",
       "id":1,
       "firstName":"John",
       "lastName":"Smith",
@@ -136,7 +136,7 @@
   "useCost":"Internal",
   "tags":[  
 	{
-         "url":"http://api.forecast.it/api/v1/tags/1",
+         "url":"https://api.forecast.it/api/v1/tags/1",
          "id":1,
          "name":"Web",
          "active":true

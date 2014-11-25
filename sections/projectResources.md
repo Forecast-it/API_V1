@@ -17,7 +17,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/project/1/projectResources/1",
+      "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
       "id":1,
       "user":"John Smith (JS)",
       "role":"Master",
@@ -43,7 +43,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/project/1/projectResources/1",
+   "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
    "id":1,
    "user":(See JSON for GET User),
    "role":(See JSON for GET Role),

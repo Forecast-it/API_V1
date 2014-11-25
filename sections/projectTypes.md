@@ -19,7 +19,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/projectTypes/1",
+      "url":"https://api.forecast.it/api/v1/projectTypes/1",
       "id":1,
       "name":"Scrum",
       "description":"Scrum project type.",
@@ -29,7 +29,7 @@
       "versionEnabled":true
    },
    {
-      "url":"http://api.forecast.it/api/v1/projectTypes/2",
+      "url":"https://api.forecast.it/api/v1/projectTypes/2",
       "id":2,
       "name":"Waterfall",
       "description":"Waterfall project type",
@@ -59,7 +59,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/projectTypes/1",
+   "url":"https://api.forecast.it/api/v1/projectTypes/1",
    "id":1,
    "name":"Scrum",
    "description":"Scrum project type.",

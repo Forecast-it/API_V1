@@ -17,7 +17,7 @@
 ```json
 [
    {
-      "url":"http://api.forecast.it/api/v1/roles/1",
+      "url":"https://api.forecast.it/api/v1/roles/1",
       "id":1,
       "name":"Developer",
       "description":"Developer resources",
@@ -43,7 +43,7 @@
 ###Sample JSON Response
 ```json
 {
-   "url":"http://api.forecast.it/api/v1/roles/1",
+   "url":"https://api.forecast.it/api/v1/roles/1",
    "id":1,
    "name":"Developer",
    "description":"Developer resources",
