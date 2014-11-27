@@ -13,11 +13,11 @@
 |estimate | Integer|
 |timeLeft | Integer|
 |projectPhase | String|
-|status | String|
+|status | String, Only used for scrum projects|
 |owners | List<String>|
-|userStory | String|
-|deadline | Date|
-|closed | Boolean|
+|userStory | String, Only used for scrum projects|
+|deadline | Date, Only used for waterfall projects|
+|closed | Boolean, Only used for waterfall projects|
 |tags | List<String>|
 
 ###Sample JSON Response
@@ -56,11 +56,11 @@
 |estimate | Integer|
 |timeLeft | Integer|
 |projectPhase | JSON (Project Phase)|
-|status | String|
+|status | JSON (Scrum Stage), Only used for scrum projects|
 |owners | List<JSON (User)>|
-|userStory | JSON (User Story)|
-|deadline | Date|
-|closed | Boolean|
+|userStory | JSON (User Story), Only used for scrum projects|
+|deadline | Date, Only used for waterfall projects|
+|closed | Boolean, Only used for waterfall projects|
 |tags | List<JSON (Tag)>|
 |registeredTime | List<JSON (Time)>|
 
@@ -73,7 +73,7 @@
    "description":"Task Description",
    "estimate":8,
    "timeLeft":8,
-   "status":"To Do",
+   "status": (See JSON from GET Scrum Stage),
    "owners":[
       (See JSON from GET User)
    ],
@@ -116,11 +116,11 @@
 |estimate | (Optional) Integer|
 |timeLeft | (Optional) Integer|
 |projectPhase | (Required) Integer, id of the project phase|
-|status | (Optional) Integer, id of the scrum column|
-|owners | (Required) List<Integer>, id of the users|
-|userStory | (Optional) Integer, id of the user story|
-|deadline | (Optional) Date|
-|closed | (Optional) Boolean|
+|status | (Optional) Integer, id of the Scrum Stage. If not set the first column will be set, Only used for scrum projects|
+|owners | (Optional) List<Integer>, id of the users|
+|userStory | (Required for scrum) Integer, id of the user story, Only used for scrum projects|
+|deadline | (Optional) Date, Only used for waterfall projects|
+|closed | (Optional) Boolean, Only used for waterfall projects|
 |tags | (Optional) List<Integer>|
 
 ###Sample JSON Request
@@ -155,11 +155,11 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 |estimate | Integer|
 |timeLeft | Integer|
 |projectPhase | Integer, id of the project phase|
-|status | Integer, id of the scrum column|
+|status | Integer, id of the scrum stage, Only used for scrum projects|
 |owners | List<Integer>, id of the users|
-|userStory | Integer, id of the user story|
-|deadline | Date|
-|closed | Boolean|
+|userStory | Integer, id of the user story, Only used for scrum projects|
+|deadline | Date, Only used for waterfall projects|
+|closed | Boolean, Only used for waterfall projects|
 |tags | List<Integer>|
 
 ###Sample JSON Request

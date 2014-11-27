@@ -103,6 +103,7 @@ Errors are returned in the following JSON format.
 * [Sprints](https://github.com/Forecast-it/API/blob/master/sections/sprints.md)
 * [Tasks](https://github.com/Forecast-it/API/blob/master/sections/tasks.md)
 * [Time Tracking/Registration](https://github.com/Forecast-it/API/blob/master/sections/timeRegistration.md)
+* [Scrum Stages](https://github.com/Forecast-it/API/blob/master/sections/scrumStages.md)
 * [Tags](https://github.com/Forecast-it/API/blob/master/sections/tags.md)
 * [Files/Attachments](https://github.com/Forecast-it/API/blob/master/sections/filesAttachments.md)
 * [Milestones](https://github.com/Forecast-it/API/blob/master/sections/milestones.md)

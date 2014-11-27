@@ -43,9 +43,9 @@
 
 ##Get Project Phase
 
-* `GET /projects/{projectId}/costTypes/{phaseId}` Returns one project phase.
+* `GET /projects/{projectId}/costTypes/{costTypeId}` Returns one project phase.
 
-Response Fields | Description/Format|
+|Response Fields | Description/Format|
 |------------ | -------------|
 |url | String, Url to the cost type|
 |id | Integer|
