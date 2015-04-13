@@ -170,7 +170,7 @@
 |epic | (Optional) String|
 |sprint | (Required) Integer, id of the sprint or backlog|
 |status | (Optional) Integer, id of the scrum column|
-|owners | (Required) List<Integer> list of ids of users|
+|owners | (Optional) List<Integer> list of ids of users|
 |tags | (Optional) List<Integer> list of ids of tags|
 
 ###Sample JSON Request
