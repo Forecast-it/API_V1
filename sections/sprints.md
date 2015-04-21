@@ -14,6 +14,7 @@
 |endDate | Date|
 |status | String {"Active", "Closed"}|
 |tags | List<String>, List of Tag Names|
+|teams | List<String>, List of Team Names|
 
 ###Sample JSON Response
 ```json
@@ -27,7 +28,9 @@
       "endDate":null,
       "status":"Active",
       "tags":[
-
+      ],
+	  "teams":[
+	     "Frontend"
       ]
    },
    {
@@ -40,6 +43,9 @@
       "status":"Closed",
       "tags":[
          "Web", ...
+      ],
+	  "teams":[
+	     "Team 1"
       ]
    }, ...
 ]
@@ -60,6 +66,7 @@
 |status | String {"Active", "Closed"}|
 |tags | List<JSON (Tag)>|
 |userstories | List<JSON (User Story)>|
+|teams | List<JSON (Team)>|
 
 ###Sample JSON Response
 ```json
@@ -71,10 +78,11 @@
    "startDate":"2013-01-01T00:00:00+01:00",
    "endDate":"2013-01-23T00:00:00+01:00",
    "status":"Closed",
-   "tags":[
-
+   "tags":[ (See JSON for GET Tag), ...
    ],
    "userstories":[ (See JSON for GET User Story), ...
+   ],
+   "teams":[ (See JSON for GET Team), ...
    ]
 }
 ```
@@ -91,6 +99,7 @@
 |endDate | (Required) Date|
 |status | (Required) String {"Active", "Closed"}|
 |tags | (Optional) List<Integer>, List of Tag ids|
+|teams | (Optional) List<Integer>, List of Team ids|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/sprints
@@ -105,6 +114,10 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
    "tags":[
       432,
       437
+   ],
+   "teams":[
+      22,
+      23
    ]
 }
 ```
@@ -121,6 +134,7 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
 |endDate | Date|
 |status | String {"Active", "Closed"}|
 |tags | List<Integer>, List of Tag ids|
+|teams | List<Integer>, List of Team ids|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/sprints/1
