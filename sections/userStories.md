@@ -11,9 +11,6 @@
 |title | String|
 |description | String|
 |type | String|
-|asA | String|
-|iWant | String|
-|soThat | String|
 |acceptanceCriteria | String|
 |estimate | Integer|
 |epic | String|
@@ -33,9 +30,6 @@
       "title":"The title of the user story",
       "description":null,
       "type":"Development",
-      "asA":"End user",
-      "iWant":"to be able to use something",
-      "soThat":"I can do something else",
       "acceptanceCriteria":"The acceptance criteria of the user story",
       "estimate":16,
       "epic":"Epic number 2",
@@ -68,9 +62,6 @@
 |title | String|
 |description | String|
 |type | String|
-|asA | String|
-|iWant | String|
-|soThat | String|
 |acceptanceCriteria | String|
 |estimate | Integer|
 |epic | String|
@@ -93,9 +84,6 @@
       "name":"Development",
       "description":"This is a development user story"
    },
-   "asA":"End user",
-   "iWant":"to be able to use something",
-   "soThat":"I can do something else",
    "acceptanceCriteria":"The acceptance criteria of the user story",
    "estimate":16,
    "epic":"",
@@ -162,9 +150,6 @@
 |title | (Required) String| 
 |description | (Optional) String|
 |type | (Required) Integer, id of the user story type|
-|asA | (Optional) String|
-|iWant | (Optional) String|
-|soThat | (Optional) String|
 |acceptanceCriteria | (Optional) String|
 |estimate | (Required) Integer|
 |epic | (Optional) String|
@@ -196,9 +181,6 @@ POST https://api.forecast.it/api/v1/project/1/userStories
 |title | String| 
 |description | String|
 |type | Integer, id of the user story type|
-|asA | String|
-|iWant | String|
-|soThat | String|
 |acceptanceCriteria | String|
 |estimate | Integer|
 |epic | String|
