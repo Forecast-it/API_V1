@@ -12,8 +12,6 @@
 |description | String|
 |internalCost | Decimal, The internal cost|
 |externalCost | Decimal, The external cost|
-|initialInternalCost | Decimal|
-|initialExternalCost | Decimal|
 
 ###Sample JSON Response
 ```json
@@ -23,20 +21,16 @@
         "id": 76,
         "name": "Blended Rate",
         "description": "This is the default blended rate for all project groups.",
-        "internalCost": 110.00,
-        "externalCost": 800.00,
-        "initialInternalCost": 1242,
-        "initialExternalCost": 1206
+        "internalCost": 110.5,
+        "externalCost": 800
     },
     {
         "url": "https://api.forecast.it/api/v1/project/17/costTypes/77",
         "id": 77,
         "name": "Developer",
         "description": "Example of a developer role.",
-        "internalCost": 110.00,
-        "externalCost": 800.00,
-        "initialInternalCost": 110,
-        "initialExternalCost": 0
+        "internalCost": 110.5,
+        "externalCost": 800
     }, ...
 ]
 ```
@@ -53,8 +47,6 @@
 |description | String|
 |internalCost | Decimal, The internal cost|
 |externalCost | Decimal, The external cost|
-|initialInternalCost | Decimal|
-|initialExternalCost | Decimal|
 
 ###Sample JSON Response
 ```json
@@ -63,9 +55,7 @@
     "id": 76,
     "name": "Blended Rate",
     "description": "This is the default blended rate for all project groups.",
-    "internalCost": 110.00,
-    "externalCost": 800.00,
-    "initialInternalCost": 1242,
-    "initialExternalCost": 1206
+    "internalCost": 110.5,
+    "externalCost": 800
 }
 ```

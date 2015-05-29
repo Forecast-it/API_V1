@@ -11,6 +11,7 @@
 |name | String|
 |description | String|
 |active | Boolean|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Response
 ```json
@@ -20,14 +21,16 @@
         "id": 1,
         "name": "Customer 1",
         "description": "An active customer",
-        "active": true
+        "active": true,
+		"integrationTimelogId": null
     },
     {
         "url": "https://api.forecast.it/api/v1/customers/2",
         "id": 2,
         "name": "Customer 2",
         "description": "A disabled customer",
-        "active": false
+        "active": false,
+		"integrationTimelogId": 667
     }, ...
 ]
 ```
@@ -43,17 +46,20 @@
 |name | String|
 |description | String|
 |active | Boolean|
+|integrationTimelogId | Integer|
 |projects | A List of the projects from this Customer (See GET project for JSON)|
 
 ###Sample JSON Response
-```json
+```javascript
 {
-    "url":"https://api.forecast.it/api/v1/customers/1",
-    "id":1,
-    "name":"Customer 1",
-    "description":"Description of customer",
-    "active":true,
-    "projects":{...}
+    "url":"https://api.forecast.it/api/v1/customers/2",
+    "id":2,
+    "name":"Customer 2",
+    "description":"A disabled customer",
+    "active":false,
+	"integrationTimelogId": 667,
+    "projects":[ (See JSON for GET Projects), ...
+   ],
 }
 ```
 
@@ -65,6 +71,7 @@
 |------------ | -------------|
 |name | String (Required)|
 |description | String (Optional)|
+|integrationTimelogId | Integer (Optional)|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/customers
@@ -72,7 +79,8 @@ POST https://api.forecast.it/api/v1/customers
 ```json
 {
     "name":"New Customer",
-    "description":"Created via API"
+    "description":"Created via API",
+	"integrationTimelogId":2
 }
 ```
 
@@ -84,6 +92,7 @@ POST https://api.forecast.it/api/v1/customers
 |------------ | -------------|
 |name | String|
 |description | String|
+|integrationTimelogId | Integer (Optional)|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/customers/1
