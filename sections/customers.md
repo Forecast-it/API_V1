@@ -14,7 +14,7 @@
 |integrationTimelogId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {
         "url": "https://api.forecast.it/api/v1/customers/1",
@@ -76,7 +76,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/customers
 
-```json
+```javascript
 {
     "name":"New Customer",
     "description":"Created via API",
@@ -97,7 +97,7 @@ POST https://api.forecast.it/api/v1/customers
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/customers/1
 
-```json
+```javascript
 {
     "description":"Updated Description"
 }

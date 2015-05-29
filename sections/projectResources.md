@@ -10,18 +10,18 @@
 |id | Integer|
 |user | String, User initials|
 |role | String, Name of the role|
-|costType | String, Name of the cost type|
 |team | String, Name of the team|
+|costType | String, Name of the cost type|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
       "id":1,
       "user":"John Smith (JS)",
       "role":"Master",
-      "team":null,
+      "team":"Team 1",
       "costType":"Developer"
    }, ...
 ]
@@ -37,11 +37,11 @@
 |id | Integer|
 |user | JSON (User)|
 |role | JSON (Role)|
-|costType | JSON (Cost Type)|
 |team | JSON (Team)|
+|costType | JSON (Cost Type)|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
    "id":1,
@@ -60,13 +60,13 @@
 |------------ | -------------|
 |user | (Required) Integer. Id of the user|
 |role | (Required) Integer. Id of the role|
+|team | (Required) Integer, Id of the team|
 |costType | (Optional) Integer, Id of the cost type|
-|team | (Optional) Integer, Id of the team|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/{projectId}/projectResources
 
-```json
+```javascript
 {
    "user":23,
    "role":42,
@@ -83,13 +83,13 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/projectResources
 |------------ | -------------|
 |user | Integer. Id of the user|
 |role | Integer. Id of the role|
-|costType | Integer, Id of the cost type|
 |team | Integer, Id of the team|
+|costType | Integer, Id of the cost type|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/projectResources/1
 
-```json
+```javascript
 {
    "role":41,
    "costType":64

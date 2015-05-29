@@ -13,15 +13,17 @@
 |estimate | Integer|
 |timeLeft | Integer|
 |projectPhase | String|
-|status | String, Only used for scrum projects|
+|status | String, Only used for scrum projects|'
+|waterfallStatus | String, Only used for waterfall projects {"To Do", "In Progress", "Ready for Review", "Done"}|
 |owners | List<String>|
 |userStory | String, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
-|closed | Boolean, Only used for waterfall projects|
 |tags | List<String>|
+|integrationTimelogTask | Boolean|
+|integrationTfsId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
@@ -38,7 +40,9 @@
       "deadline":null,
       "tags":[
          "Web", ...
-      ]
+      ],
+	  "integrationTimelogTask": false,
+	  "integrationTfsId": 7
    }, ...
 ]
 ```
@@ -57,15 +61,18 @@
 |timeLeft | Integer|
 |projectPhase | JSON (Project Phase)|
 |status | JSON (Scrum Stage), Only used for scrum projects|
+|waterfallStatus | String, Only used for waterfall projects {"To Do", "In Progress", "Ready for Review", "Done"}|
 |owners | List<JSON (User)>|
 |userStory | JSON (User Story), Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
 |closed | Boolean, Only used for waterfall projects|
 |tags | List<JSON (Tag)>|
 |registeredTime | List<JSON (Time)>|
+|integrationTimelogTask | Boolean|
+|integrationTfsId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
    "id":1,
@@ -101,7 +108,9 @@
          "costType":"Developer",
          "team":null
       }, ...
-   ]
+   ],
+   "integrationTimelogTask": false,
+   "integrationTfsId": 7
 }
 ```
 
@@ -117,16 +126,19 @@
 |timeLeft | (Optional) Integer|
 |projectPhase | (Required) Integer, id of the project phase|
 |status | (Optional) Integer, id of the Scrum Stage. If not set the first column will be set, Only used for scrum projects|
+|waterfallStatus | String, Only used for waterfall projects {"To Do", "In Progress", "Ready for Review", "Done"}|
 |owners | (Optional) List<Integer>, id of the users|
 |userStory | (Required for scrum) Integer, id of the user story, Only used for scrum projects|
 |deadline | (Optional) Date, Only used for waterfall projects|
 |closed | (Optional) Boolean, Only used for waterfall projects|
 |tags | (Optional) List<Integer>|
+|integrationTimelogTask | (Optional) Boolean|
+|integrationTfsId | (Optional) Integer|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/tasks
 
-```json
+```javascript
 {
    "title":"Task Title",
    "description":"Task Description",
@@ -156,16 +168,19 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 |timeLeft | Integer|
 |projectPhase | Integer, id of the project phase|
 |status | Integer, id of the scrum stage, Only used for scrum projects|
+|waterfallStatus | String, Only used for waterfall projects {"To Do", "In Progress", "Ready for Review", "Done"}|
 |owners | List<Integer>, id of the users|
 |userStory | Integer, id of the user story, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
 |closed | Boolean, Only used for waterfall projects|
 |tags | List<Integer>|
+|integrationTimelogTask | Boolean|
+|integrationTfsId | Integer|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/tasks/1
 
-```json
+```javascript
 {
    "timeLeft":0,
    "status":5

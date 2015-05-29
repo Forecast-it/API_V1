@@ -12,16 +12,17 @@
 |lastName | String|
 |initials | String|
 |email | String|
-|userName | String|
 |dateCreated | Date| 
 |lastUpdated | Date|
 |isAdmin | Boolean|
 |active | Boolean|
+|defaultRole | Integer|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/users/1",
@@ -30,13 +31,14 @@
       "lastName":"Smith",
       "initials":"JS",
       "email":"js@domain.com",
-      "userName":"js@domain.com",
       "dateCreated":"2013-01-14T18:46:56+01:00",
       "lastUpdated":"2013-01-14T18:47:58+01:00",
       "isAdmin":true,
       "active":true,
+	  "defaultRole":29,
       "externalEmployeeId":null,
-      "startPage":"Dashboard"
+      "startPage":"Dashboard",
+	  "integrationTimelogId": 4
    }, ...
 ]
 ```
@@ -53,16 +55,17 @@
 |lastName | String|
 |initials | String|
 |email | String|
-|userName | String|
 |dateCreated | Date|
 |lastUpdated | Date|
 |isAdmin | Boolean|
 |active | Boolean|
+|defaultRole | JSON (Role)|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/users/1",
    "id":1,
@@ -70,13 +73,14 @@
    "lastName":"Smith",
    "initials":"JS",
    "email":"js@domain.com",
-   "userName":"js@domain.com",
    "dateCreated":"2013-01-14T18:46:56+01:00",
    "lastUpdated":"2013-01-14T18:47:58+01:00",
    "isAdmin":true,
    "active":true,
+   "defaultRole": (See JSON from GET Role),
    "externalEmployeeId":null,
-   "startPage":"Dashboard"
+   "startPage":"Dashboard",
+   "integrationTimelogId": 4
 }
 ```
 
@@ -92,21 +96,23 @@
 |email | (Required) String|
 |isAdmin | (Required) Boolean|
 |active | (Optional) Boolean|
+|defaultRole | (required) Integer, id of the default role|
 |externalEmployeeId | (Optional) String|
 |startPage | (Required) String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
+|integrationTimelogId | (Optional) Integer|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/users
 
-```json
+```javascript
 {
    "firstName":"John",
    "lastName":"Smith",
    "initials":"JS",
    "email":"js@domain.com",
-   "userName":"js@domain.com",
    "isAdmin":true,
    "active":true,
+   "defaultRole":4,
    "externalEmployeeId":"exId1",
    "startPage":"Dashboard"
 }
@@ -124,13 +130,15 @@ POST https://api.forecast.it/api/v1/users
 |email | String|
 |isAdmin | Boolean|
 |active | Boolean|
+|defaultRole | Integer, id of the default role|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/users/1
 
-```json
+```javascript
 {
    "firstName":"John",
    "lastName":"Doe"

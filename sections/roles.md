@@ -14,15 +14,15 @@
 |externalCostPrice | Decimal|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/roles/1",
       "id":1,
       "name":"Developer",
       "description":"Developer resources",
-      "internalCostPrice":110.00,
-      "externalCostPrice":200.00
+      "internalCostPrice":110.5,
+      "externalCostPrice":200
    }, ...
 ]
 ```
@@ -41,13 +41,13 @@
 |externalCostPrice | Decimal|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/roles/1",
    "id":1,
    "name":"Developer",
    "description":"Developer resources",
-   "internalCostPrice":110.00,
-   "externalCostPrice":200.00
+   "internalCostPrice":110.5,
+   "externalCostPrice":200
 }
 ```

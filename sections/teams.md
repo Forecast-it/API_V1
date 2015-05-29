@@ -12,7 +12,7 @@
 |description | String|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/teams/1",
@@ -36,7 +36,7 @@
 |users | List<JSON (User)>, List of users in the team|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/teams/1",
    "id":1,
@@ -60,7 +60,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/teams
 
-```json
+```javascript
 {
    "name":"New Team",
    "description":"A description of the team"
@@ -79,7 +79,7 @@ POST https://api.forecast.it/api/v1/teams
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/teams/1
 
-```json
+```javascript
 {
    "name":"Different Team Name",
    "description":"New description"

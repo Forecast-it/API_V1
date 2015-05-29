@@ -17,9 +17,10 @@
 |projectPhase | String|
 |costType | String|
 |Team | String|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/project/1/time/1",
@@ -32,7 +33,8 @@
       "worker":"John Smith (JS)",
       "projectPhase":"Implementation",
       "costType":"Developer",
-      "team":"Team Awesome"
+      "team":"Team Awesome",
+	  "integrationTimelogId":3
    }, ...
 ]
 ```
@@ -54,9 +56,10 @@
 |projectPhase | JSON (Project Phase)|
 |costType | JSON (Cost Type)|
 |team | JSON (Team)|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/project/11/time/1",
    "id":1,
@@ -87,11 +90,12 @@
 |projectPhase | (Optional) Integer, id of the project phase|
 |costType | (Optional) Integer, id of the cost type|
 |team | (Optional) Integer, id of the team|
+|integrationTimelogId | (Optional) Integer|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/time
 
-```json
+```javascript
 {
    "description":"",
    "date":"2013-01-16T00:00:00+01:00",
@@ -120,11 +124,12 @@ POST https://api.forecast.it/api/v1/projects/1/time
 |projectPhase | Integer, id of the project phase|
 |costType | Integer, id of the cost type|
 |team | Integer, id of the team|
+|integrationTimelogId | Integer|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/time/1
 
-```json
+```javascript
 {
    "description":"updated description",
    "minutes":120

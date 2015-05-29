@@ -12,7 +12,7 @@
 |description | String|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
@@ -36,7 +36,7 @@
 |userstories | List<JSON (User Story)>, list of user stories with this type|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
    "id":1,
@@ -60,7 +60,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/userStoryTypes
 
-```json
+```javascript
 {
    "name":"Development",
    "description":"This is a regular development user story"
@@ -79,7 +79,7 @@ POST https://api.forecast.it/api/v1/userStoryTypes
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/userStoryTypes/1
 
-```json
+```javascript
 {
    "name":"New type name",
    "description":"Different description"

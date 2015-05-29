@@ -14,7 +14,7 @@
 |externalCost | Decimal, The external cost|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {
         "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
@@ -49,7 +49,7 @@
 |externalCost | Decimal, The external cost|
 
 ###Sample JSON Response
-```json
+```javascript
 {
     "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
     "id": 76,

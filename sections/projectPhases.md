@@ -15,7 +15,7 @@
 |order | Integer, The sorting order of the phase|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {
 	    "url": "https://api.forecast.it/api/v1/projectPhases/10",
@@ -53,7 +53,7 @@ Response Fields | Description/Format|
 |order | Integer, The sorting order of the phase|
 
 ###Sample JSON Response
-```json
+```javascript
 {
 	"url": "https://api.forecast.it/api/v1/projectPhases/10",
 	"id": 10,

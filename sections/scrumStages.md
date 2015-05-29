@@ -13,7 +13,7 @@
 |description | String|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {
 	    "url": "https://api.forecast.it/api/v1/scrumStage/10",
@@ -45,7 +45,7 @@
 |description | String|
 
 ###Sample JSON Response
-```json
+```javascript
 {
 	"url": "https://api.forecast.it/api/v1/scrumStage/10",
 	"id": 10,

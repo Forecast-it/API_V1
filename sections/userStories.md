@@ -16,13 +16,16 @@
 |epic | String|
 |sprint | String|
 |status | String|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|integrationTfsId | Integer|
 |owners |List<String>|
 |tags | List<String>|
 |dependencies | List<String>|
 |tasks | List<String>|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
@@ -34,14 +37,16 @@
       "estimate":16,
       "epic":"Epic number 2",
       "sprint":"The name of the Sprint",
+	  "status": "To do",
+	  "integrationTimelogId": 36,
+      "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
+      "integrationTfsId": 3,
       "owners":[
          "John Smith (JS)"
       ],
       "tags":[
-
       ],
       "dependencies":[
-
       ],
       "tasks":[
          "View data",
@@ -61,83 +66,40 @@
 |id | Integer|
 |title | String|
 |description | String|
-|type | String|
+|type | JSON (User Story Type)|
 |acceptanceCriteria | String|
 |estimate | Integer|
 |epic | String|
 |sprint | JSON (Sprint)|
-|status | String|
+|status | JSON (Scrum Stage)|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|integrationTfsId | Integer|
 |owners | List<JSON (User)>|
 |tags | List<JSON (Tag)>|
 |dependencies | List<JSON (User Story)>|
+|tasks | List<JSON (Task)|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
    "id":17
    "title":"The title of the user story",
-   "description":null,
-   "type":{
-      "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
-      "id":1,
-      "name":"Development",
-      "description":"This is a development user story"
-   },
+   "description":"",
+   "type":(See JSON for GET User Story Type),
    "acceptanceCriteria":"The acceptance criteria of the user story",
    "estimate":16,
-   "epic":"",
-   "sprint":{
-      "url":"https://api.forecast.it/api/v1/project/1/sprints/1",
-      "id":1,
-      "title":"The name of the Sprint",
-      "description":"Sprint description",
-      "startDate":"2013-01-14T00:00:00+01:00",
-      "endDate":"2013-01-21T00:00:00+01:00",
-      "status":"Closed",
-      "tags":[
-
-      ]
-   },
-   "owners":[
-      {
-         "url":"https://api.forecast.it/api/v1/users/1",
-         "id":1,
-         "firstName":"John",
-         "lastName":"Smith",
-         "initials":"JS",
-         "email":"js@domain.com",
-         "userName":"js@domain.com",
-         "dateCreated":"2013-01-14T18:46:56+01:00",
-         "lastUpdated":"2013-01-14T18:47:58+01:00",
-         "isAdmin":true,
-         "active":true,
-         "externalEmployeeId":null
-      },...
-   ],
-   "tags":[
-
-   ],
-   "dependencies":[
-
-   ],
-   "tasks":[
-      {
-         "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
-         "id":1,
-         "title":"View data",
-         "description":"",
-         "estimate":6,
-         "timeLeft":0,
-         "status":"Done",
-         "owner":"John Smith (JS)",
-         "userStory":"The title of the user story",
-         "deadline":null,
-         "tags":[
-
-         ]
-      },...
-   ]
+   "epic":null,
+   "sprint":(See JSON for GET Sprint),
+   "status":(See JSON for GET Scrum Stage),
+   "integrationTimelogId": 36,
+   "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
+   "integrationTfsId": 3,
+   "owners":[ (See JSON for GET User),...],
+   "tags":[ (See JSON for GET Tag),...],
+   "dependencies":[(See JSON for GET User Story),...],
+   "tasks":[(See JSON for GET Task),...]
 }
 ```
 
@@ -154,6 +116,9 @@
 |estimate | (Required) Integer|
 |epic | (Optional) String|
 |sprint | (Required) Integer, id of the sprint or backlog|
+|integrationTimelogId | (Optional) Integer|
+|integrationTimelogGuid | (Optional) String|
+|integrationTfsId | (Optional) Integer|
 |status | (Optional) Integer, id of the scrum column|
 |owners | (Optional) List<Integer> list of ids of users|
 |tags | (Optional) List<Integer> list of ids of tags|
@@ -161,7 +126,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/project/1/userStories
 
-```json
+```javascript
 {
    "title":"The title of the user story",
    "type":42,
@@ -185,6 +150,9 @@ POST https://api.forecast.it/api/v1/project/1/userStories
 |estimate | Integer|
 |epic | String|
 |sprint | Integer, id of the sprint or backlog|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|integrationTfsId | Integer|
 |status | Integer, id of the scrum column|
 |owners | List<Integer> list of ids of users|
 |tags | List<Integer> list of ids of tags|
@@ -192,7 +160,7 @@ POST https://api.forecast.it/api/v1/project/1/userStories
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/project/1/userStories/1
 
-```json
+```javascript
 {
    "title":"New title",
    "acceptanceCriteria":"New acceptance criteria"

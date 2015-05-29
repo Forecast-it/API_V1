@@ -12,7 +12,7 @@
 |active | Boolean, Has the Tag been disabled|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/tags/1",
@@ -45,7 +45,7 @@
 |active | Boolean, Has the Tag been disabled|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/tags/1",
    "id":1,
@@ -85,7 +85,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/tags
 
-```json
+```javascript
 {
    "name":"Web",
    "project":true,
@@ -122,7 +122,7 @@ POST https://api.forecast.it/api/v1/tags
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/tags/1
 
-```json
+```javascript
 {
    "name":"Different Name",
    "project":false

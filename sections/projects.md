@@ -10,7 +10,6 @@
 |id | Integer|
 |projectIdString | String|
 |name | String|
-|comment | String|
 |projectStatus | String {“Estimating”, “In progress”, “Completed”, “Halted”, “Cancelled”}|
 |projectType | JSON (Project Type)|
 |businessUnit | JSON (Business Unit)|
@@ -18,7 +17,6 @@
 |projectOwner | String|
 |projectManager | String|
 |projectEstimator | String|
-|hasParentProject | Boolean|
 |parentProject | String|
 |startDate | Date|
 |deliveryDate | Date|
@@ -28,14 +26,13 @@
 |tags | List<String>|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {  
       "url":"https://api.forecast.it/api/v1/projects/1",
       "id":1,
       "projectIdString":"x001",
       "name":"Example Project 1",
-      "comment":"This is an example project",
       "projectStatus":"In Progress",
       "projectType":"Scrum Project Type Example",
       "businessUnit":"Main Business Unit",
@@ -43,7 +40,6 @@
       "projectOwner":"John Smith (JS)",
       "projectManager":"Jane Doe (JD)",
       "projectEstimator":"Foo Bar (FB)",
-      "hasParentProject":false,
       "parentProject":null,
       "startDate":"2012-11-19T01:00:00",
       "deliveryDate":"2013-11-19T01:00:00",
@@ -68,7 +64,6 @@
 |id | Integer|
 |projectIdString | String|
 |name | String|
-|comment | String|
 |projectStatus | String {“Estimating”, “In progress”, “Completed”, “Halted”, “Cancelled”}|
 |projectType | JSON (Project Type)|
 |businessUnit | JSON (Business Unit)|
@@ -76,7 +71,6 @@
 |projectOwner | JSON (User)|
 |projectManager | JSON (User)|
 |projectEstimator | JSON (User)|
-|hasParentProject | Boolean|
 |parentProject |JSON (Project)|
 |startDate | Date|
 |deliveryDate | Date|
@@ -86,7 +80,7 @@
 |tags | List<JSON (Tag)>|
 
 ###Sample JSON Response
-```json
+```javascript
 {  
   "url":"https://api.forecast.it/api/v1/projects/1",
   "id":1,
@@ -128,11 +122,9 @@
   },
   "projectManager":(See project owner),
   "projectEstimator":(See project owner),
-  "hasParentProject":false,
   "parentProject":null,
   "startDate":"2012-11-19T01:00:00",
   "deliveryDate":"2013-11-19T01:00:00",
-  "comment":"This is an example project",
   "useCost":"Internal",
   "tags":[  
 	{
@@ -154,7 +146,6 @@
 |------------ | -------------|
 |projectIdString | (Optional) String|
 |name | (Required) String|
-|comment | (Optional) String|
 |projectStatus | (Required) String {“Estimating”, “In progress”, “Completed”, “Halted”, “Cancelled”}|
 |projectType | (Required) Integer, id of the project type|
 |businessUnit | (Required) Integer, id of the business unit|
@@ -162,7 +153,6 @@
 |projectOwner | (Required) Integer, id of the user|
 |projectManager | (Optional) Integer, id of the user|
 |projectEstimator | (Optional) Integer, id of the user|
-|hasParentProject | (Optional) Boolean|
 |parentProject | (Optional) Integer, id of the project|
 |startDate | (Optional) Date|
 |deliveryDate | (Optional) Date|
@@ -175,7 +165,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/customers
 
-```json
+```javascript
 {
     "name":"New Project",
     "projectStatus":"In Progress",
@@ -201,7 +191,6 @@ POST https://api.forecast.it/api/v1/customers
 |------------ | -------------|
 |projectIdString | String|
 |name | String|
-|comment | String|
 |projectStatus | String {“Estimating”, “In progress”, “Completed”, “Halted”, “Cancelled”}|
 |projectType | Integer, id of the project type|
 |businessUnit | Integer, id of the business unit|
@@ -209,7 +198,6 @@ POST https://api.forecast.it/api/v1/customers
 |projectOwner | Integer, id of the user|
 |projectManager | Integer, id of the user|
 |projectEstimator | Integer, id of the user|
-|hasParentProject | Boolean|
 |parentProject | Integer, id of the project|
 |startDate | Date|
 |deliveryDate | Date|
@@ -221,10 +209,8 @@ POST https://api.forecast.it/api/v1/customers
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/customers/1
 
-```json
+```javascript
 {
-    "comment":"Updated Comment",
-    "hasParentProject":true,
     "parentProject":2
 }
 ```

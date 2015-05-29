@@ -16,7 +16,7 @@
 |versionEnabled | Boolean|
 
 ###Sample JSON Response
-```json
+```javascript
 [
    {
       "url":"https://api.forecast.it/api/v1/projectTypes/1",
@@ -57,7 +57,7 @@
 |versionEnabled | Boolean|
 
 ###Sample JSON Response
-```json
+```javascript
 {
    "url":"https://api.forecast.it/api/v1/projectTypes/1",
    "id":1,

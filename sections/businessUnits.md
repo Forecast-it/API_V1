@@ -11,7 +11,7 @@
 |name | String|
 
 ###Sample JSON Response
-```json
+```javascript
 [
     {
         "url": "https://api.forecast.it/api/v1/businessUnits/1",
@@ -38,7 +38,7 @@
 |projectTypes | A List of the project types usable with this business unit. (See GET projectType for JSON)|
 
 ###Sample JSON Response
-```json
+```javascript
 {
     "url":"https://api.forecast.it/api/v1/businessUnits/1",
     "id":1,
@@ -58,7 +58,7 @@
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/businessUnits
 
-```json
+```javascript
 {
     "name":"New Business Unit"
 }
@@ -75,7 +75,7 @@ POST https://api.forecast.it/api/v1/businessUnits
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/businessUnits/1
 
-```json
+```javascript
 {
     "name":"New Name"
 }
