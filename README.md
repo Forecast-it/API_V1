@@ -119,6 +119,6 @@ Errors are returned in the following JSON format.
 
 Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use GitHub issues. Fork these docs and send a pull request with improvements.
 
-To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `forecast_it` or open a support ticket through the Forecast.it feedback system.
+To talk with us and other developers about the API, [post a question on Quora](http://www.quora.com/Forecast-it) under the `forecast-it` topic or open a support ticket through the Forecast.it support system.
 
 You can always reach us via email at info@forecast.it
