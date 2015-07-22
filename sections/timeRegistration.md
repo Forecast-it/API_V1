@@ -12,29 +12,31 @@
 |date | Date|
 |minutes | Integer|
 |workerName | String|
-|task | String|
-|worker | String|
-|projectPhase | String|
-|costType | String|
-|Team | String|
+|task | Integer|
+|worker | Integer|
+|projectPhase | Integer|
+|costType | Integer|
+|Team | Integer|
 |integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
 
 ###Sample JSON Response
 ```javascript
 [
    {
-      "url":"https://api.forecast.it/api/v1/project/1/time/1",
+      "url":"https://api.forecast.it/api/v1/projects/1/time/1",
       "id":1,
       "description":"Fixed that annoying bug!",
       "date":"2013-01-16T00:00:00+01:00",
       "minutes":180,
       "workerName":"John Smith",
-      "task":"Name of the Task",
-      "worker":"John Smith (JS)",
-      "projectPhase":"Implementation",
-      "costType":"Developer",
-      "team":"Team Awesome",
-	  "integrationTimelogId":3
+      "task":12,
+      "worker":22,
+      "projectPhase":11,
+      "costType":17,
+      "team":25,
+	  "integrationTimelogId":null,
+	  "integrationTimelogGuid":null
    }, ...
 ]
 ```
@@ -57,11 +59,12 @@
 |costType | JSON (Cost Type)|
 |team | JSON (Team)|
 |integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
 
 ###Sample JSON Response
 ```javascript
 {
-   "url":"https://api.forecast.it/api/v1/project/11/time/1",
+   "url":"https://api.forecast.it/api/v1/projects/1/time/1",
    "id":1,
    "description":"",
    "date":"2013-01-16T00:00:00+01:00",
@@ -71,7 +74,9 @@
    "worker":(See JSON for GET User),
    "projectPhase":(See JSON for GET Project Phase),
    "costType":(See JSON for GET Cost Type),
-   "team":(See JSON for GET Team)
+   "team":(See JSON for GET Team),
+   "integrationTimelogId": null,
+   "integrationTimelogGuid": null
 }
 ```
 
@@ -91,6 +96,7 @@
 |costType | (Optional) Integer, id of the cost type|
 |team | (Optional) Integer, id of the team|
 |integrationTimelogId | (Optional) Integer|
+|integrationTimelogGuid | (Optional) String|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/time
@@ -125,6 +131,7 @@ POST https://api.forecast.it/api/v1/projects/1/time
 |costType | Integer, id of the cost type|
 |team | Integer, id of the team|
 |integrationTimelogId | Integer|
+|integrationTimelogGuid | (Optional) String|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/time/1

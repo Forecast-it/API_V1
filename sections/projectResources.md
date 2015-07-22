@@ -8,21 +8,21 @@
 |------------ | -------------|
 |url | String, Url to the project resource|
 |id | Integer|
-|user | String, User initials|
-|role | String, Name of the role|
-|team | String, Name of the team|
-|costType | String, Name of the cost type|
+|user | Integer|
+|role | Integer|
+|team | Integer|
+|costType | Integer|
 
 ###Sample JSON Response
 ```javascript
 [
    {
-      "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
+      "url":"https://api.forecast.it/api/v1/projects/1/projectResources/1",
       "id":1,
-      "user":"John Smith (JS)",
-      "role":"Master",
-      "team":"Team 1",
-      "costType":"Developer"
+      "user":33,
+      "role":22,
+      "team":13,
+      "costType":42
    }, ...
 ]
 ```
@@ -43,12 +43,12 @@
 ###Sample JSON Response
 ```javascript
 {
-   "url":"https://api.forecast.it/api/v1/project/1/projectResources/1",
+   "url":"https://api.forecast.it/api/v1/projects/1/projectResources/1",
    "id":1,
    "user":(See JSON for GET User),
    "role":(See JSON for GET Role),
    "team":(See JSON for GET Team),
-   "costType":/See JSON for GET Cost Type)
+   "costType":(See JSON for GET Cost Type)
 }
 ```
 
@@ -58,8 +58,8 @@
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|user | (Required) Integer. Id of the user|
-|role | (Required) Integer. Id of the role|
+|user | (Required) Integer, Id of the user|
+|role | (Required) Integer, Id of the role|
 |team | (Required) Integer, Id of the team|
 |costType | (Optional) Integer, Id of the cost type|
 
@@ -81,8 +81,8 @@ POST https://api.forecast.it/api/v1/projects/{projectId}/projectResources
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|user | Integer. Id of the user|
-|role | Integer. Id of the role|
+|user | Integer, Id of the user|
+|role | Integer, Id of the role|
 |team | Integer, Id of the team|
 |costType | Integer, Id of the cost type|
 

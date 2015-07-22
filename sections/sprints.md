@@ -14,41 +14,38 @@
 |endDate | Date|
 |status | String {"Active", "Closed"}|
 |tfsIntegrationId | Integer|
-|tags | List<String>, List of Tag Names|
-|teams | List<String>, List of Team Names|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
+|tags | List<Integer>, List of Tag ID's|
+|teams | List<Integer>, List of Team ID's|
 
 ###Sample JSON Response
 ```javascript
 [
    {
-      "url":"https://api.forecast.it/api/v1/project/1/sprints/1",
+      "url":"https://api.forecast.it/api/v1/projects/1/sprints/1",
       "id":1,
-      "title":"Backlog",
-      "description":"",
-      "startDate":null,
-      "endDate":null,
-      "status":"Active",
-	  "tfsIntegrationId":null,
-      "tags":[
-      ],
-	  "teams":[
-	     "Frontend"
-      ]
-   },
-   {
-      "url":"https://api.forecast.it/api/v1/project/1/sprints/2",
-      "id":2,
       "title":"Sprint 1",
       "description":"",
-      "startDate":"2013-01-01T00:00:00+01:00",
-      "endDate":"2013-01-23T00:00:00+01:00",
-      "status":"Closed",
-	  "tfsIntegrationId":4,
+      "startDate": "2015-07-22T11:06:03+02:00",
+      "endDate": "2015-07-22T11:06:03+02:00",
+      "status":"Active",
+	  "tfsIntegrationId":null,
+	  "integrationTimelogId": null,
+      "integrationTimelogGuid": null,
+      "modifiedOn": "2015-07-22T11:06:03+02:00",
+      "modifiedBy": 20,
+      "createdOn": "2015-07-22T11:06:03+02:00",
+      "createdBy": 20,
       "tags":[
-         "Web", ...
+	      42
       ],
 	  "teams":[
-	     "Team 1"
+	     33
       ]
    }, ...
 ]
@@ -68,6 +65,12 @@
 |endDate | Date|
 |status | String {"Active", "Closed"}|
 |tfsIntegrationId | Integer|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
 |tags | List<JSON (Tag)>|
 |userstories | List<JSON (User Story)>|
 |teams | List<JSON (Team)>|
@@ -75,14 +78,20 @@
 ###Sample JSON Response
 ```javascript
 {
-   "url":"https://api.forecast.it/api/v1/project/1/sprints/2",
-   "id":2,
+   "url":"https://api.forecast.it/api/v1/projects/1/sprints/1",
+   "id":1,
    "title":"Sprint 1",
    "description":"",
    "startDate":"2013-01-01T00:00:00+01:00",
    "endDate":"2013-01-23T00:00:00+01:00",
    "status":"Closed",
    "tfsIntegrationId":4,
+   "integrationTimelogId": null,
+   "integrationTimelogGuid": null,
+   "modifiedOn": "2015-07-22T11:06:03+02:00",
+   "modifiedBy": 20,
+   "createdOn": "2015-07-22T11:06:03+02:00",
+   "createdBy": 20,
    "tags":[ (See JSON for GET Tag), ...
    ],
    "userstories":[ (See JSON for GET User Story), ...
@@ -104,6 +113,8 @@
 |endDate | (Required) Date|
 |status | (Required) String {"Active", "Closed"}|
 |tfsIntegrationId | (Optional) Integer|
+|integrationTimelogId | (Optional) Integer|
+|integrationTimelogGuid | (Optional) String|
 |tags | (Optional) List<Integer>, List of Tag ids|
 |teams | (Optional) List<Integer>, List of Team ids|
 
@@ -140,6 +151,8 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
 |endDate | Date|
 |status | String {"Active", "Closed"}|
 |tfsIntegrationId | (Optional) Integer|
+|integrationTimelogId | (Optional) Integer|
+|integrationTimelogGuid | (Optional) String|
 |tags | List<Integer>, List of Tag ids|
 |teams | List<Integer>, List of Team ids|
 

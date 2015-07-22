@@ -33,7 +33,6 @@
 |id | Integer|
 |name | String|
 |description | String|
-|userstories | List<JSON (User Story)>, list of user stories with this type|
 
 ###Sample JSON Response
 ```javascript
@@ -41,10 +40,7 @@
    "url":"https://api.forecast.it/api/v1/userStoryTypes/1",
    "id":1,
    "name":"Development",
-   "description":"This is a regular development user story",
-   "userstories":[
-      (See JSON for GET User Story), ...
-   ]
+   "description":"This is a regular development user story"
 }
 ```
 

@@ -11,19 +11,19 @@
 |projectIdString | String|
 |name | String|
 |projectStatus | String {“Estimating”, “In progress”, “Completed”, “Halted”, “Cancelled”}|
-|projectType | JSON (Project Type)|
-|businessUnit | JSON (Business Unit)|
-|customer | JSON (Customer)|
-|projectOwner | String|
-|projectManager | String|
-|projectEstimator | String|
-|parentProject | String|
+|projectType | Integer|
+|businessUnit | Integer|
+|customer | Integer|
+|projectOwner | Integer|
+|projectManager | Integer|
+|projectEstimator | Integer|
+|parentProject | Integer|
 |startDate | Date|
 |deliveryDate | Date|
 |useCost | String {“Internal”,”External”}|
 |excludeFromStatistics | Boolean|
 |useALA | Boolean|
-|tags | List<String>|
+|tags | List<Integer>|
 
 ###Sample JSON Response
 ```javascript
@@ -34,19 +34,19 @@
       "projectIdString":"x001",
       "name":"Example Project 1",
       "projectStatus":"In Progress",
-      "projectType":"Scrum Project Type Example",
-      "businessUnit":"Main Business Unit",
-      "customer":"An example customer",
-      "projectOwner":"John Smith (JS)",
-      "projectManager":"Jane Doe (JD)",
-      "projectEstimator":"Foo Bar (FB)",
-      "parentProject":null,
+      "projectType":1,
+      "businessUnit":2,
+      "customer":3,
+      "projectOwner":4,
+      "projectManager":4,
+      "projectEstimator":3,
+      "parentProject":1,
       "startDate":"2012-11-19T01:00:00",
       "deliveryDate":"2013-11-19T01:00:00",
       "useCost":"Internal",
       "tags":[  
-         "Web",
-         "Marketing"
+         33,
+         44
       ],
       "excludeFromStatistics":false,
       "useALA":true

@@ -17,7 +17,7 @@
 ```javascript
 [
     {
-        "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
+        "url": "https://api.forecast.it/api/v1/projects/17/costTypes/76",
         "id": 76,
         "name": "Blended Rate",
         "description": "This is the default blended rate for all project groups.",
@@ -25,7 +25,7 @@
         "externalCost": 800
     },
     {
-        "url": "https://api.forecast.it/api/v1/project/17/costTypes/77",
+        "url": "https://api.forecast.it/api/v1/projects/17/costTypes/77",
         "id": 77,
         "name": "Developer",
         "description": "Example of a developer role.",
@@ -51,7 +51,7 @@
 ###Sample JSON Response
 ```javascript
 {
-    "url": "https://api.forecast.it/api/v1/project/17/costTypes/76",
+    "url": "https://api.forecast.it/api/v1/projects/17/costTypes/76",
     "id": 76,
     "name": "Blended Rate",
     "description": "This is the default blended rate for all project groups.",

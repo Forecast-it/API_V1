@@ -18,7 +18,7 @@
 ```javascript
 [
     {
-	    "url": "https://api.forecast.it/api/v1/projectPhases/10",
+	    "url": "https://api.forecast.it/api/v1/projects/1/projectPhases/10",
 	    "id": 10,
 	    "phase": "Design",
 	    "description": "The design phase.",
@@ -27,7 +27,7 @@
 	    "order": 1
     },
 	{
-	    "url": "https://api.forecast.it/api/v1/projectPhases/11",
+	    "url": "https://api.forecast.it/api/v1/projects/1/projectPhases/11",
 	    "id": 11,
 	    "phase": "Implementation",
 	    "description": "The implementation phase.",
@@ -55,7 +55,7 @@ Response Fields | Description/Format|
 ###Sample JSON Response
 ```javascript
 {
-	"url": "https://api.forecast.it/api/v1/projectPhases/10",
+	"url": "https://api.forecast.it/api/v1/projects/1/projectPhases/10",
 	"id": 10,
 	"phase": "Design",
 	"description": "The design phase.",

@@ -10,47 +10,58 @@
 |id | Integer|
 |title | String|
 |description | String|
-|type | String|
+|type | Integer|
 |acceptanceCriteria | String|
 |estimate | Integer|
 |epic | String|
-|sprint | String|
-|status | String|
+|sprint | Integer|
+|status | Integer|
 |integrationTimelogId | Integer|
 |integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
 |integrationTfsId | Integer|
-|owners |List<String>|
-|tags | List<String>|
-|dependencies | List<String>|
-|tasks | List<String>|
+|owners |List<Integer>|
+|tags | List<Integer>|
+|dependencies | List<Integer>|
+|tasks | List<Integer>|
 
 ###Sample JSON Response
 ```javascript
 [
    {
-      "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
+      "url":"https://api.forecast.it/api/v1/projects/1/userStories/1",
       "id":1,
       "title":"The title of the user story",
-      "description":null,
+      "description":"Create something",
       "type":"Development",
       "acceptanceCriteria":"The acceptance criteria of the user story",
       "estimate":16,
       "epic":"Epic number 2",
-      "sprint":"The name of the Sprint",
-	  "status": "To do",
+      "sprint":22,
+	  "status": 13,
 	  "integrationTimelogId": 36,
       "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
+	  "modifiedOn": "2015-07-21T21:55:57+02:00",
+      "modifiedBy": 14,
+      "createdOn": "2015-07-21T21:55:25+02:00",
+      "createdBy": 14,
       "integrationTfsId": 3,
       "owners":[
-         "John Smith (JS)"
+         14,
+		 13
       ],
       "tags":[
+	     11
       ],
       "dependencies":[
+	     32
       ],
       "tasks":[
-         "View data",
-         "View persistence",...
+         42,
+		 43
       ]
    },...
 ]
@@ -58,7 +69,7 @@
 
 ##Get User Story
 
-* `GET /project/{id}/userStories/{userStoryId}` Returns a user story for a project.
+* `GET /projects/{id}/userStories/{userStoryId}` Returns a user story for a project.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -74,6 +85,10 @@
 |status | JSON (Scrum Stage)|
 |integrationTimelogId | Integer|
 |integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
 |integrationTfsId | Integer|
 |owners | List<JSON (User)>|
 |tags | List<JSON (Tag)>|
@@ -83,7 +98,7 @@
 ###Sample JSON Response
 ```javascript
 {
-   "url":"https://api.forecast.it/api/v1/project/1/userStories/1",
+   "url":"https://api.forecast.it/api/v1/projects/1/userStories/1",
    "id":17
    "title":"The title of the user story",
    "description":"",
@@ -95,6 +110,10 @@
    "status":(See JSON for GET Scrum Stage),
    "integrationTimelogId": 36,
    "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
+   "modifiedOn": "2015-07-21T21:55:57+02:00",
+   "modifiedBy": 14,
+   "createdOn": "2015-07-21T21:55:25+02:00",
+   "createdBy": 14,
    "integrationTfsId": 3,
    "owners":[ (See JSON for GET User),...],
    "tags":[ (See JSON for GET Tag),...],
@@ -124,7 +143,7 @@
 |tags | (Optional) List<Integer> list of ids of tags|
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/project/1/userStories
+POST https://api.forecast.it/api/v1/projects/1/userStories
 
 ```javascript
 {
@@ -139,7 +158,7 @@ POST https://api.forecast.it/api/v1/project/1/userStories
 
 ##Update User Story
 
-* `PUT /project/{projectId}/userStories/{id}` Updates a user story.
+* `PUT /projects/{projectId}/userStories/{id}` Updates a user story.
 
 |Response Fields | Description/Format|
 |------------ | -------------|
@@ -158,7 +177,7 @@ POST https://api.forecast.it/api/v1/project/1/userStories
 |tags | List<Integer> list of ids of tags|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/project/1/userStories/1
+PUT https://api.forecast.it/api/v1/projects/1/userStories/1
 
 ```javascript
 {
@@ -169,7 +188,7 @@ PUT https://api.forecast.it/api/v1/project/1/userStories/1
 
 ##Delete User Story
 
-* `DELETE /project/{projectId}/userStories/{id}` Deletes a user story.
+* `DELETE /projects/{projectId}/userStories/{id}` Deletes a user story.
 
 ###Sample JSON Request
 DELETE https://api.forecast.it/api/v1/projects/1/userStories/1

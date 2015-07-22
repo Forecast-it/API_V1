@@ -12,37 +12,52 @@
 |description | String|
 |estimate | Integer|
 |timeLeft | Integer|
-|projectPhase | String|
-|status | String, Only used for scrum projects|'
+|projectPhase | Integer|
+|status | Integer, Only used for scrum projects|
 |waterfallStatus | String, Only used for waterfall projects {"To Do", "In Progress", "Ready for Review", "Done"}|
-|owners | List<String>|
-|userStory | String, Only used for scrum projects|
+|owners | List<Integer>|
+|userStory | Integer, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
-|tags | List<String>|
+|tags | List<Integer>|
 |integrationTimelogTask | Boolean|
 |integrationTfsId | Integer|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
 
 ###Sample JSON Response
 ```javascript
 [
    {
-      "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
+      "url":"https://api.forecast.it/api/v1/projects/1/tasks/1",
       "id":1,
       "title":"Task Title",
       "description":"Task Description",
       "estimate":8,
       "timeLeft":8,
-      "status":"To Do",
-      "owner":[
-	      "John Smith (JS)"
+	  "projectPhase": 30,
+      "status":20,
+	  "waterfallStatus": null,
+      "owners":[
+	      42
       ],
-      "userStory":"User Story Title",
+      "userStory":22,
       "deadline":null,
       "tags":[
-         "Web", ...
+         12,
+		 13
       ],
 	  "integrationTimelogTask": false,
-	  "integrationTfsId": 7
+	  "integrationTfsId": null,
+	  "integrationTimelogId": null,
+      "integrationTimelogGuid": null,
+      "modifiedOn": "2015-07-22T11:06:03+02:00",
+      "modifiedBy": 20,
+      "createdOn": "2015-07-22T11:06:03+02:00",
+      "createdBy": 20,
    }, ...
 ]
 ```
@@ -65,52 +80,48 @@
 |owners | List<JSON (User)>|
 |userStory | JSON (User Story), Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
-|closed | Boolean, Only used for waterfall projects|
 |tags | List<JSON (Tag)>|
 |registeredTime | List<JSON (Time)>|
 |integrationTimelogTask | Boolean|
 |integrationTfsId | Integer|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
+|modifiedOn | Date|
+|modifiedBy | Integer|
+|createdOn | Date|
+|createdBy | Integer|
 
 ###Sample JSON Response
 ```javascript
 {
-   "url":"https://api.forecast.it/api/v1/project/1/tasks/1",
+   "url":"https://api.forecast.it/api/v1/projects/1/tasks/1",
    "id":1,
    "title":"Task Title",
    "description":"Task Description",
    "estimate":8,
    "timeLeft":8,
+   "projectPhase": (See JSON from GET Project Phase),
    "status": (See JSON from GET Scrum Stage),
+   "waterfallStatus": null,
    "owners":[
       (See JSON from GET User)
    ],
    "userStory": (See JSON from GET User Story) ,
    "deadline":null,
    "tags":[
-      {
-         "url":"https://api.forecast.it/api/v1/tags/32",
-         "id":32,
-         "name":"Web",
-         "active":true
-      }, ...
+      (See JSON from GET Tag)
    ],
    "registeredTime":[
-      {  
-         "url":"https://api.forecast.it/api/v1/project/1/time/1",
-         "id":1,
-         "description":"Description of registered time",
-         "date":"2013-11-08T00:00:00+01:00",
-         "minutes":60,
-         "workerName":"John Smith",
-         "task":"Task Title",
-         "worker":"John Smith (JS)",
-         "projectPhase":"Implementation",
-         "costType":"Developer",
-         "team":null
-      }, ...
+      (See JSON from GET Time Registrations)
    ],
    "integrationTimelogTask": false,
-   "integrationTfsId": 7
+   "integrationTfsId": 7,
+   "integrationTimelogId": null,
+   "integrationTimelogGuid": null,
+   "modifiedOn": "2015-07-22T11:06:03+02:00",
+   "modifiedBy": 20,
+   "createdOn": "2015-07-22T11:06:03+02:00",
+   "createdBy": 20
 }
 ```
 
@@ -130,10 +141,11 @@
 |owners | (Optional) List<Integer>, id of the users|
 |userStory | (Required for scrum) Integer, id of the user story, Only used for scrum projects|
 |deadline | (Optional) Date, Only used for waterfall projects|
-|closed | (Optional) Boolean, Only used for waterfall projects|
 |tags | (Optional) List<Integer>|
 |integrationTimelogTask | (Optional) Boolean|
 |integrationTfsId | (Optional) Integer|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/tasks
@@ -172,10 +184,11 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 |owners | List<Integer>, id of the users|
 |userStory | Integer, id of the user story, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
-|closed | Boolean, Only used for waterfall projects|
 |tags | List<Integer>|
 |integrationTimelogTask | Boolean|
 |integrationTfsId | Integer|
+|integrationTimelogId | Integer|
+|integrationTimelogGuid | String|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/tasks/1
