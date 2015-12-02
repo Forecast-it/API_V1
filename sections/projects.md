@@ -163,7 +163,7 @@
 
 
 ###Sample JSON Request
-POST https://api.forecast.it/api/v1/customers
+POST https://api.forecast.it/api/v1/projects
 
 ```javascript
 {
@@ -207,7 +207,7 @@ POST https://api.forecast.it/api/v1/customers
 |tags | List<Integer>, list of tag ids|
 
 ###Sample JSON Request
-PUT https://api.forecast.it/api/v1/customers/1
+PUT https://api.forecast.it/api/v1/projects/1
 
 ```javascript
 {
