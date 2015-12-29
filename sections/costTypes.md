@@ -20,7 +20,7 @@
         "url": "https://api.forecast.it/api/v1/projects/17/costTypes/76",
         "id": 76,
         "name": "Blended Rate",
-        "description": "This is the default blended rate for all project groups.",
+        "description": "This is the default blended rate for all project roles.",
         "internalCost": 110.5,
         "externalCost": 800
     },
@@ -54,7 +54,7 @@
     "url": "https://api.forecast.it/api/v1/projects/17/costTypes/76",
     "id": 76,
     "name": "Blended Rate",
-    "description": "This is the default blended rate for all project groups.",
+    "description": "This is the default blended rate for all project roles.",
     "internalCost": 110.5,
     "externalCost": 800
 }
