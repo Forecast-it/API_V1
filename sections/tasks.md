@@ -19,10 +19,6 @@
 |userStory | Integer, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
 |tags | List<Integer>|
-|integrationTimelogTask | Boolean|
-|integrationTfsId | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -50,10 +46,6 @@
          12,
 		 13
       ],
-	  "integrationTimelogTask": false,
-	  "integrationTfsId": null,
-	  "integrationTimelogId": null,
-      "integrationTimelogGuid": null,
       "modifiedOn": "2015-07-22T11:06:03+02:00",
       "modifiedBy": 20,
       "createdOn": "2015-07-22T11:06:03+02:00",
@@ -82,10 +74,6 @@
 |deadline | Date, Only used for waterfall projects|
 |tags | List<JSON (Tag)>|
 |registeredTime | List<JSON (Time)>|
-|integrationTimelogTask | Boolean|
-|integrationTfsId | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -114,10 +102,6 @@
    "registeredTime":[
       (See JSON from GET Time Registrations)
    ],
-   "integrationTimelogTask": false,
-   "integrationTfsId": 7,
-   "integrationTimelogId": null,
-   "integrationTimelogGuid": null,
    "modifiedOn": "2015-07-22T11:06:03+02:00",
    "modifiedBy": 20,
    "createdOn": "2015-07-22T11:06:03+02:00",
@@ -142,10 +126,6 @@
 |userStory | (Required for scrum) Integer, id of the user story, Only used for scrum projects|
 |deadline | (Optional) Date, Only used for waterfall projects|
 |tags | (Optional) List<Integer>|
-|integrationTimelogTask | (Optional) Boolean|
-|integrationTfsId | (Optional) Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/tasks
@@ -185,10 +165,6 @@ POST https://api.forecast.it/api/v1/projects/1/tasks
 |userStory | Integer, id of the user story, Only used for scrum projects|
 |deadline | Date, Only used for waterfall projects|
 |tags | List<Integer>|
-|integrationTimelogTask | Boolean|
-|integrationTfsId | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/tasks/1

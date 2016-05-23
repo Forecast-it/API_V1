@@ -13,9 +13,6 @@
 |startDate | Date|
 |endDate | Date|
 |status | String {"Active", "Closed"}|
-|tfsIntegrationId | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -34,9 +31,6 @@
       "startDate": "2015-07-22T11:06:03+02:00",
       "endDate": "2015-07-22T11:06:03+02:00",
       "status":"Active",
-	  "tfsIntegrationId":null,
-	  "integrationTimelogId": null,
-      "integrationTimelogGuid": null,
       "modifiedOn": "2015-07-22T11:06:03+02:00",
       "modifiedBy": 20,
       "createdOn": "2015-07-22T11:06:03+02:00",
@@ -64,9 +58,6 @@
 |startDate | Date|
 |endDate | Date|
 |status | String {"Active", "Closed"}|
-|tfsIntegrationId | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -85,9 +76,6 @@
    "startDate":"2013-01-01T00:00:00+01:00",
    "endDate":"2013-01-23T00:00:00+01:00",
    "status":"Closed",
-   "tfsIntegrationId":4,
-   "integrationTimelogId": null,
-   "integrationTimelogGuid": null,
    "modifiedOn": "2015-07-22T11:06:03+02:00",
    "modifiedBy": 20,
    "createdOn": "2015-07-22T11:06:03+02:00",
@@ -112,9 +100,6 @@
 |startDate | (Required) Date|
 |endDate | (Required) Date|
 |status | (Required) String {"Active", "Closed"}|
-|tfsIntegrationId | (Optional) Integer|
-|integrationTimelogId | (Optional) Integer|
-|integrationTimelogGuid | (Optional) String|
 |tags | (Optional) List<Integer>, List of Tag ids|
 |teams | (Optional) List<Integer>, List of Team ids|
 
@@ -150,9 +135,6 @@ POST https://api.forecast.it/api/v1/projects/1/sprints
 |startDate | Date|
 |endDate | Date|
 |status | String {"Active", "Closed"}|
-|tfsIntegrationId | (Optional) Integer|
-|integrationTimelogId | (Optional) Integer|
-|integrationTimelogGuid | (Optional) String|
 |tags | List<Integer>, List of Tag ids|
 |teams | List<Integer>, List of Team ids|
 

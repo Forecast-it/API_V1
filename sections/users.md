@@ -19,7 +19,6 @@
 |defaultRole | Integer|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
-|integrationTimelogId | Integer|
 
 ###Sample JSON Response
 ```javascript
@@ -37,8 +36,7 @@
       "active":true,
 	  "defaultRole":29,
       "externalEmployeeId":null,
-      "startPage":"Dashboard",
-	  "integrationTimelogId": 4
+      "startPage":"Dashboard"
    }, ...
 ]
 ```
@@ -62,7 +60,6 @@
 |defaultRole | JSON (Role)|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
-|integrationTimelogId | Integer|
 
 ###Sample JSON Response
 ```javascript
@@ -79,8 +76,7 @@
    "active":true,
    "defaultRole": (See JSON from GET Role),
    "externalEmployeeId":null,
-   "startPage":"Dashboard",
-   "integrationTimelogId": 4
+   "startPage":"Dashboard"
 }
 ```
 
@@ -99,7 +95,6 @@
 |defaultRole | (required) Integer, id of the default role|
 |externalEmployeeId | (Optional) String|
 |startPage | (Required) String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
-|integrationTimelogId | (Optional) Integer|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/users
@@ -133,7 +128,6 @@ POST https://api.forecast.it/api/v1/users
 |defaultRole | Integer, id of the default role|
 |externalEmployeeId | String|
 |startPage | String {"Dashboard", "SelectProject", "ProjectPortfolio"}|
-|integrationTimelogId | Integer|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/users/1

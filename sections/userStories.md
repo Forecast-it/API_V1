@@ -16,8 +16,6 @@
 |epic | String|
 |sprint | Integer|
 |status | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -42,8 +40,6 @@
       "epic":"Epic number 2",
       "sprint":22,
 	  "status": 13,
-	  "integrationTimelogId": 36,
-      "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
 	  "modifiedOn": "2015-07-21T21:55:57+02:00",
       "modifiedBy": 14,
       "createdOn": "2015-07-21T21:55:25+02:00",
@@ -83,8 +79,6 @@
 |epic | String|
 |sprint | JSON (Sprint)|
 |status | JSON (Scrum Stage)|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |modifiedOn | Date|
 |modifiedBy | Integer|
 |createdOn | Date|
@@ -108,8 +102,6 @@
    "epic":null,
    "sprint":(See JSON for GET Sprint),
    "status":(See JSON for GET Scrum Stage),
-   "integrationTimelogId": 36,
-   "integrationTimelogGuid": "2922204c-efb6-4216-8da2-d724fb1fa51d",
    "modifiedOn": "2015-07-21T21:55:57+02:00",
    "modifiedBy": 14,
    "createdOn": "2015-07-21T21:55:25+02:00",
@@ -135,8 +127,6 @@
 |estimate | (Required) Integer|
 |epic | (Optional) String|
 |sprint | (Required) Integer, id of the sprint or backlog|
-|integrationTimelogId | (Optional) Integer|
-|integrationTimelogGuid | (Optional) String|
 |integrationTfsId | (Optional) Integer|
 |status | (Optional) Integer, id of the scrum column|
 |owners | (Optional) List<Integer> list of ids of users|
@@ -169,8 +159,6 @@ POST https://api.forecast.it/api/v1/projects/1/userStories
 |estimate | Integer|
 |epic | String|
 |sprint | Integer, id of the sprint or backlog|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 |integrationTfsId | Integer|
 |status | Integer, id of the scrum column|
 |owners | List<Integer> list of ids of users|

@@ -17,8 +17,6 @@
 |projectPhase | Integer|
 |costType | Integer|
 |Team | Integer|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 
 ###Sample JSON Response
 ```javascript
@@ -34,9 +32,7 @@
       "worker":22,
       "projectPhase":11,
       "costType":17,
-      "team":25,
-	  "integrationTimelogId":null,
-	  "integrationTimelogGuid":null
+      "team":25
    }, ...
 ]
 ```
@@ -58,8 +54,6 @@
 |projectPhase | JSON (Project Phase)|
 |costType | JSON (Cost Type)|
 |team | JSON (Team)|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | String|
 
 ###Sample JSON Response
 ```javascript
@@ -74,9 +68,7 @@
    "worker":(See JSON for GET User),
    "projectPhase":(See JSON for GET Project Phase),
    "costType":(See JSON for GET Cost Type),
-   "team":(See JSON for GET Team),
-   "integrationTimelogId": null,
-   "integrationTimelogGuid": null
+   "team":(See JSON for GET Team)
 }
 ```
 
@@ -95,8 +87,6 @@
 |projectPhase | (Optional) Integer, id of the project phase|
 |costType | (Optional) Integer, id of the cost type|
 |team | (Optional) Integer, id of the team|
-|integrationTimelogId | (Optional) Integer|
-|integrationTimelogGuid | (Optional) String|
 
 ###Sample JSON Request
 POST https://api.forecast.it/api/v1/projects/1/time
@@ -130,8 +120,6 @@ POST https://api.forecast.it/api/v1/projects/1/time
 |projectPhase | Integer, id of the project phase|
 |costType | Integer, id of the cost type|
 |team | Integer, id of the team|
-|integrationTimelogId | Integer|
-|integrationTimelogGuid | (Optional) String|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/time/1
