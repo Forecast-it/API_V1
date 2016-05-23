@@ -10,13 +10,13 @@
 |id | Integer|
 |title | String|
 |isFolder | Boolean|
-|team | Integer|
-|projectPhase | Integer|
+|team | Integer, id of the team|
+|projectPhase | Integer, id of the project phase|
 |minimumHours | Integer|
 |likelyHours | Integer|
 |maximumHours | Integer|
 |predictedHours | Integer|
-|role | Integer|
+|role | Integer, id of the role|
 |tags | List<Integer>|
 
 ###Sample JSON Response
