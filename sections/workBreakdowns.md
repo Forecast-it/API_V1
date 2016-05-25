@@ -9,6 +9,8 @@
 |url | URL to the work breakdowns|
 |id | Integer|
 |title | String|
+|description | String|
+|subjectExpertMatter| String|
 |isFolder | Boolean|
 |parent | Integer, id of the parent folder|
 |team | Integer, id of the team|
@@ -27,8 +29,10 @@
       "url":"https://api.forecast.it/api/v1/projects/1/workBreakdowns/1",
       "id":1,
       "title":"The title of the work breakdown",
+      "description":"Description of the element",
+      "subjectExpertMatter":"",
       "isFolder":false,
-	  "parent":null,
+      "parent":null,
       "team":14,
       "projectPhase":1,
       "minimumHours":16,
@@ -52,6 +56,8 @@
 |url | URL to the work breakdowns|
 |id | Integer|
 |title | String|
+|description | String|
+|subjectExpertMatter| String|
 |isFolder | Boolean|
 |parent | Integer, id of the parent folder|
 |team | JSON(Teams)|
@@ -69,6 +75,8 @@
    "url":"https://api.forecast.it/api/v1/projects/1/workBreakdowns/1",
    "id":1,
    "title":"The title of the work breakdown",
+   "description":"Description of the element",
+   "subjectExpertMatter":"",
    "isFolder":false,
    "parent":2,
    "team":(See JSON for GET Team),
@@ -89,6 +97,8 @@
 |Response Fields | Description/Format|
 |------------ | -------------|
 |title | (Required) String|
+|description | (Optional) String|
+|subjectExpertMatter| (Optional) String|
 |isFolder | (Required) Boolean|
 |parent | (Optional) Integer. Id of the parent folder|
 |team | (Optional) Integer. Only when isFolder is set to false.|
@@ -126,6 +136,8 @@ POST https://api.forecast.it/api/v1/projects/1/workBreakdowns
 |Response Fields | Description/Format|
 |------------ | -------------|
 |title | String|
+|description | String|
+|subjectExpertMatter| String|
 |team | Integer|
 |parent | Integer. Id of the parent folder|
 |projectPhase | Integer|
