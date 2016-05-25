@@ -10,6 +10,7 @@
 |id | Integer|
 |title | String|
 |isFolder | Boolean|
+|parent | Integer, id of the parent folder|
 |team | Integer, id of the team|
 |projectPhase | Integer, id of the project phase|
 |minimumHours | Integer|
@@ -27,6 +28,7 @@
       "id":1,
       "title":"The title of the work breakdown",
       "isFolder":false,
+	  "parent":null,
       "team":14,
       "projectPhase":1,
       "minimumHours":16,
@@ -51,6 +53,7 @@
 |id | Integer|
 |title | String|
 |isFolder | Boolean|
+|parent | Integer, id of the parent folder|
 |team | JSON(Teams)|
 |projectPhase | JSON(Project Phases)|
 |minimumHours | Integer|
@@ -67,6 +70,7 @@
    "id":1,
    "title":"The title of the work breakdown",
    "isFolder":false,
+   "parent":2,
    "team":(See JSON for GET Team),
    "projectPhase":(See JSON for GET Project Phase),
    "minimumHours":16,
@@ -86,6 +90,7 @@
 |------------ | -------------|
 |title | (Required) String|
 |isFolder | (Required) Boolean|
+|parent | (Optional) Integer. Id of the parent folder|
 |team | (Optional) Integer. Only when isFolder is set to false.|
 |projectPhase | (Optional) Integer. Only when isFolder is set to false.|
 |minimumHours | (Required) Integer. Only when isFolder is set to false.|
@@ -101,6 +106,7 @@ POST https://api.forecast.it/api/v1/projects/1/workBreakdowns
 {
    "title":"The title of the work breakdown",
    "isFolder":false,
+   "parent":2,
    "team":14,
    "projectPhase":1,
    "minimumHours":16,
@@ -119,14 +125,15 @@ POST https://api.forecast.it/api/v1/projects/1/workBreakdowns
 
 |Response Fields | Description/Format|
 |------------ | -------------|
-|title | (Required) String|
-|team | (Optional) Integer|
-|projectPhase | (Optional) Integer|
-|minimumHours | (Required) Integer|
-|likelyHours | (Required) Integer|
-|maximumHours | (Required) Integer|
-|role | (Optional) Integer|
-|tags | (Optional) List<Integer>|
+|title | String|
+|team | Integer|
+|parent | Integer. Id of the parent folder|
+|projectPhase | Integer|
+|minimumHours | Integer|
+|likelyHours | Integer|
+|maximumHours | Integer|
+|role | Integer|
+|tags | List<Integer>|
 
 ###Sample JSON Request
 PUT https://api.forecast.it/api/v1/projects/1/workBreakdowns/1
