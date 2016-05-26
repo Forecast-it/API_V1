@@ -105,7 +105,7 @@
 |subjectExpertMatter| (Optional) String|
 |isFolder | (Required) Boolean|
 |parent | (Optional) Integer. Id of the parent folder|
-|milestone | (Optional) Integer. Id of the milestone (If parent is set, then this is ignored|
+|milestone | (Optional) Integer. Id of the milestone (If parent is set, then this is ignored)|
 |team | (Optional) Integer. Only when isFolder is set to false.|
 |projectPhase | (Optional) Integer. Only when isFolder is set to false.|
 |minimumHours | (Required) Integer. Only when isFolder is set to false.|
@@ -145,7 +145,7 @@ POST https://api.forecast.it/api/v1/projects/1/workBreakdowns
 |subjectExpertMatter| String|
 |team | Integer|
 |parent | Integer. Id of the parent folder|
-|milestone | Integer. Id of the milestone (If parent is set, then this is ignored|
+|milestone | Integer. Id of the milestone (If parent is set, then this is ignored)|
 |projectPhase | Integer|
 |minimumHours | Integer|
 |likelyHours | Integer|
