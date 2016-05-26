@@ -109,6 +109,7 @@ Errors are returned in the following JSON format.
 * [Tags](https://github.com/Forecast-it/API/blob/master/sections/tags.md)
 * [Files/Attachments](https://github.com/Forecast-it/API/blob/master/sections/filesAttachments.md)
 * [Milestones](https://github.com/Forecast-it/API/blob/master/sections/milestones.md)
+* [Work Breakdowns](https://github.com/Forecast-it/API/blob/master/sections/workBreakdowns.md)
 * [Versions](https://github.com/Forecast-it/API/blob/master/sections/versions.md)
 
 ##API libraries

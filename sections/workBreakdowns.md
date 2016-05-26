@@ -1,4 +1,4 @@
-#Work Breakdown
+#Work Breakdowns
 
 ##Get Work Breakdowns
 
@@ -13,6 +13,7 @@
 |subjectExpertMatter| String|
 |isFolder | Boolean|
 |parent | Integer, id of the parent folder|
+|milestone | Integer, id of the milestone|
 |team | Integer, id of the team|
 |projectPhase | Integer, id of the project phase|
 |minimumHours | Integer|
@@ -20,7 +21,7 @@
 |maximumHours | Integer|
 |predictedHours | Integer|
 |role | Integer, id of the role|
-|tags | List<Integer>|
+|tags | List<Integer>, ids of the tags|
 
 ###Sample JSON Response
 ```javascript
@@ -33,6 +34,7 @@
       "subjectExpertMatter":"",
       "isFolder":false,
       "parent":null,
+	  "milestone":null,
       "team":14,
       "projectPhase":1,
       "minimumHours":16,
@@ -59,7 +61,8 @@
 |description | String|
 |subjectExpertMatter| String|
 |isFolder | Boolean|
-|parent | Integer, id of the parent folder|
+|parent | JSON(Work Breakdown)|
+|milestone | JSON(Milestone)
 |team | JSON(Teams)|
 |projectPhase | JSON(Project Phases)|
 |minimumHours | Integer|
@@ -78,7 +81,8 @@
    "description":"Description of the element",
    "subjectExpertMatter":"",
    "isFolder":false,
-   "parent":2,
+   "parent":(See JSON for GET Work Breakdown),
+   "milestone":(See JSON for GET Milestone),
    "team":(See JSON for GET Team),
    "projectPhase":(See JSON for GET Project Phase),
    "minimumHours":16,
@@ -101,6 +105,7 @@
 |subjectExpertMatter| (Optional) String|
 |isFolder | (Required) Boolean|
 |parent | (Optional) Integer. Id of the parent folder|
+|milestone | (Optional) Integer. Id of the milestone (If parent is set, then this is ignored|
 |team | (Optional) Integer. Only when isFolder is set to false.|
 |projectPhase | (Optional) Integer. Only when isFolder is set to false.|
 |minimumHours | (Required) Integer. Only when isFolder is set to false.|
@@ -140,6 +145,7 @@ POST https://api.forecast.it/api/v1/projects/1/workBreakdowns
 |subjectExpertMatter| String|
 |team | Integer|
 |parent | Integer. Id of the parent folder|
+|milestone | Integer. Id of the milestone (If parent is set, then this is ignored|
 |projectPhase | Integer|
 |minimumHours | Integer|
 |likelyHours | Integer|
