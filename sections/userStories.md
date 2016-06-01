@@ -20,7 +20,6 @@
 |modifiedBy | Integer|
 |createdOn | Date|
 |createdBy | Integer|
-|integrationTfsId | Integer|
 |owners |List<Integer>|
 |tags | List<Integer>|
 |dependencies | List<Integer>|
@@ -44,7 +43,6 @@
       "modifiedBy": 14,
       "createdOn": "2015-07-21T21:55:25+02:00",
       "createdBy": 14,
-      "integrationTfsId": 3,
       "owners":[
          14,
 		 13
@@ -83,7 +81,6 @@
 |modifiedBy | Integer|
 |createdOn | Date|
 |createdBy | Integer|
-|integrationTfsId | Integer|
 |owners | List<JSON (User)>|
 |tags | List<JSON (Tag)>|
 |dependencies | List<JSON (User Story)>|
@@ -106,7 +103,6 @@
    "modifiedBy": 14,
    "createdOn": "2015-07-21T21:55:25+02:00",
    "createdBy": 14,
-   "integrationTfsId": 3,
    "owners":[ (See JSON for GET User),...],
    "tags":[ (See JSON for GET Tag),...],
    "dependencies":[(See JSON for GET User Story),...],
@@ -127,7 +123,6 @@
 |estimate | (Required) Integer|
 |epic | (Optional) String|
 |sprint | (Required) Integer, id of the sprint or backlog|
-|integrationTfsId | (Optional) Integer|
 |status | (Optional) Integer, id of the scrum column|
 |owners | (Optional) List<Integer> list of ids of users|
 |tags | (Optional) List<Integer> list of ids of tags|
@@ -159,7 +154,6 @@ POST https://api.forecast.it/api/v1/projects/1/userStories
 |estimate | Integer|
 |epic | String|
 |sprint | Integer, id of the sprint or backlog|
-|integrationTfsId | Integer|
 |status | Integer, id of the scrum column|
 |owners | List<Integer> list of ids of users|
 |tags | List<Integer> list of ids of tags|
