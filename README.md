@@ -80,7 +80,7 @@ Errors are returned in the following JSON format.
 |status | Integer, the status code of the error. This corresponds to the HTTP status code|
 |message | String, a descriptive message explaining the error|
 
-###Sample JSON Error Response
+### Sample JSON Error Response
 ```json
 {
     "status":401,
