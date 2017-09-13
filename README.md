@@ -1,4 +1,4 @@
-#What is the Forecast.it API?
+# What is the Forecast.it API?
 
 The [Forecast.it](http://forecast.it) API is a complete programmable interface to all Forecast.it functionality.
 
